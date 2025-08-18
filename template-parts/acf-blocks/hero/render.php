@@ -42,7 +42,7 @@ $partners = get_field('partners');
             </div>
         <?php endif; ?>
         <div class="wcl-hero__content">
-            <h1 class="wcl-hero__title"><?= $title; ?></h1>
+            <h1 class="wcl-hero__title wcl-h1"><?= $title; ?></h1>
             <div class="wcl-hero__text"><?= $text; ?></div>
             <div class="wcl-hero__links">
                 <?php if ($product_link):

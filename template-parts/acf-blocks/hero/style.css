@@ -120,34 +120,21 @@
     transform: translateX(-50%);
   }
 }
-@media (min-width: 23.4375em) and (max-width: 120em) {
-  @supports (margin-bottom: clamp( 3.125rem , 1.9872572816rem  +  4.854368932vw , 7.8125rem )) {
+@media (min-width: 23.4375em) and (max-width: 90em) {
+  @supports (margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
     .wcl-hero {
-      margin-bottom: clamp( 3.125rem , 1.9872572816rem  +  4.854368932vw , 7.8125rem );
+      margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem );
     }
   }
-  @supports not (margin-bottom: clamp( 3.125rem , 1.9872572816rem  +  4.854368932vw , 7.8125rem )) {
+  @supports not (margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
     .wcl-hero {
-      margin-bottom: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 96.5625);
-    }
-  }
-  @supports (font-size: clamp( 2rem , 1.5145631068rem  +  2.071197411vw , 4rem )) {
-    .wcl-hero__title {
-      font-size: clamp( 2rem , 1.5145631068rem  +  2.071197411vw , 4rem );
-    }
-  }
-  @supports not (font-size: clamp( 2rem , 1.5145631068rem  +  2.071197411vw , 4rem )) {
-    .wcl-hero__title {
-      font-size: calc(2rem + 2 * (100vw - 23.4375rem) / 96.5625);
+      margin-bottom: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 66.5625);
     }
   }
 }
-@media (min-width: 120em) {
+@media (min-width: 90em) {
   .wcl-hero {
     margin-bottom: 7.8125rem;
-  }
-  .wcl-hero__title {
-    font-size: 4rem;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -194,8 +181,5 @@
 @media (max-width: 23.4375em) {
   .wcl-hero {
     margin-bottom: 3.125rem;
-  }
-  .wcl-hero__title {
-    font-size: 2rem;
   }
 }

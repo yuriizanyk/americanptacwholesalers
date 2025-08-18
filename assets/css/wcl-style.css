@@ -4,6 +4,7 @@
   --dark-color: #222;
   --green-color: #3D7E71;
   --green-hover: rgb(61, 127, 114, .5);
+  --bg-color: #F9F9F9;
   --transition: all .25s ease-in;
 }
 
@@ -314,22 +315,7 @@ h5,
 h6,
 .wcl-h6 {
   font-weight: 500;
-  line-height: 1.5;
-}
-
-h1,
-.wcl-h1 {
-  font-size: 3rem;
-}
-
-h2,
-.wcl-h2 {
-  font-size: 2.25rem;
-}
-
-h3,
-.wcl-h3 {
-  font-size: 1.875rem;
+  line-height: 1.25;
 }
 
 h4,
@@ -641,6 +627,58 @@ i {
   background-color: var(--dark-color);
   transition: var(--transition);
 }
+@media (min-width: 23.4375em) and (max-width: 90em) {
+  @supports (font-size: clamp( 2rem , 1.2957746479rem  +  3.0046948357vw , 4rem )) {
+    h1,
+    .wcl-h1 {
+      font-size: clamp( 2rem , 1.2957746479rem  +  3.0046948357vw , 4rem );
+    }
+  }
+  @supports not (font-size: clamp( 2rem , 1.2957746479rem  +  3.0046948357vw , 4rem )) {
+    h1,
+    .wcl-h1 {
+      font-size: calc(2rem + 2 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+  @supports (font-size: clamp( 1.75rem , 1.573943662rem  +  0.7511737089vw , 2.25rem )) {
+    h2,
+    .wcl-h2 {
+      font-size: clamp( 1.75rem , 1.573943662rem  +  0.7511737089vw , 2.25rem );
+    }
+  }
+  @supports not (font-size: clamp( 1.75rem , 1.573943662rem  +  0.7511737089vw , 2.25rem )) {
+    h2,
+    .wcl-h2 {
+      font-size: calc(1.75rem + 0.5 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+  @supports (font-size: clamp( 1.375rem , 1.3309859155rem  +  0.1877934272vw , 1.5rem )) {
+    h3,
+    .wcl-h3 {
+      font-size: clamp( 1.375rem , 1.3309859155rem  +  0.1877934272vw , 1.5rem );
+    }
+  }
+  @supports not (font-size: clamp( 1.375rem , 1.3309859155rem  +  0.1877934272vw , 1.5rem )) {
+    h3,
+    .wcl-h3 {
+      font-size: calc(1.375rem + 0.125 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+}
+@media (min-width: 90em) {
+  h1,
+  .wcl-h1 {
+    font-size: 4rem;
+  }
+  h2,
+  .wcl-h2 {
+    font-size: 2.25rem;
+  }
+  h3,
+  .wcl-h3 {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 768px) {
   .menu-icon {
     display: inline-block;
@@ -682,18 +720,6 @@ i {
     padding-left: 15px;
     padding-right: 15px;
   }
-  h1,
-  .wcl-h1 {
-    font-size: 2.5rem;
-  }
-  h2,
-  .wcl-h2 {
-    font-size: 2rem;
-  }
-  h3,
-  .wcl-h3 {
-    font-size: 1.75rem;
-  }
   h4,
   .wcl-h4 {
     font-size: 1.375rem;
@@ -722,6 +748,20 @@ i {
 @media screen and (max-width: 768px) {
   .menu .menu-item a {
     font-weight: 600;
+  }
+}
+@media (max-width: 23.4375em) {
+  h1,
+  .wcl-h1 {
+    font-size: 2rem;
+  }
+  h2,
+  .wcl-h2 {
+    font-size: 1.75rem;
+  }
+  h3,
+  .wcl-h3 {
+    font-size: 1.375rem;
   }
 }
 @media (any-hover: hover) {

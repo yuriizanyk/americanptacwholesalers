@@ -32,3 +32,6 @@ mix.sass('assets/scss/wcl-admin-style.scss', 'assets/css')
 
 mix.sass('template-parts/acf-blocks/hero/style.scss', 'template-parts/acf-blocks/hero')
     .sourceMaps();
+
+mix.sass('template-parts/acf-blocks/solutions/style.scss', 'template-parts/acf-blocks/solutions')
+    .sourceMaps();
