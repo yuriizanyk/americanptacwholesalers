@@ -2,7 +2,7 @@
 @import "assets/scss/utils/mixings";
 
 .wcl-hero {
-    @include adaptiveValue("margin-bottom", 125, 50, 0, 1920, 375);
+    @include adaptiveValue("margin-bottom", 125, 50, 0, 1440, 375);
 
     &__container {
         position: relative;
@@ -72,7 +72,6 @@
         font-weight: 500;
         line-height: 1.25;
         margin-bottom: 20px;
-        @include adaptiveValue("font-size", 64, 32, 0, 1920, 375);
     }
 
     &__text {
