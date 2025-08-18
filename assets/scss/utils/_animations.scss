@@ -1,0 +1,44 @@
+[class*='--anim'] {
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+
+    &.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s ease 0s;
+    }
+}
+
+.anim-left {
+    transform: translateX(-100px);
+    opacity: 0;
+    visibility: hidden;
+
+    &--anim-delay {
+        &.show-left {
+            transition: all 1.5s ease 0.5s;
+        }
+    }
+
+    &.show-left {
+        transition: all 1s ease 0s;
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.anim-right {
+    transform: translateX(100px);
+    opacity: 0;
+    visibility: hidden;
+
+    &.show-right {
+        transition: all 1s ease 0s;
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}

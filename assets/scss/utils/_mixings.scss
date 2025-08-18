@@ -1,0 +1,133 @@
+@use "sass:math";
+
+@mixin wcl-reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin wcl-reset-link {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin wcl-reset-input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  line-height: normal;
+  appearance: none;
+  box-shadow: none;
+}
+
+@mixin wcl-reset-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+// Minimum page width
+$minWidth: 320;
+// Width of the canvas (layout)
+$maxWidth: 1920;
+// Width of the restrictive container (0 = no restriction)
+$maxWidthContainer: 1296;
+// Total indentation at the container
+// (30 = 15px left and right, 0 = no indentation)
+$containerPadding: 40;
+// First breakpoint trigger width
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+@function percent($num1, $num2) {
+	$rez: math.div($num1, $num2) * 100%;
+	@return $rez;
+}
+@function toRem($num1, $num2: 16) {
+	$rez: math.div($num1, $num2) + rem;
+	@return $rez;
+}
+@function toEm($num1, $num2: 16) {
+	$rez: math.div($num1, $num2) + em;
+	@return $rez;
+}
+
+// Adaptive property (clamp)
+@mixin adaptiveValue($property, $startSize, $minSize, $keepSize: 0, $widthFrom: $containerWidth, $widthTo: $minWidth) {
+	@if ($startSize==0) {
+		$startSize: 0.000001;
+	}
+	@if ($minSize==0) {
+		$minSize: 0.000001;
+	}
+
+	// For calc();
+	$addSize: math.div($startSize - $minSize, 16);
+
+	@if ($widthFrom == $containerWidth and $maxWidthContainer == 0) {
+		$widthFrom: $maxWidth;
+	}
+
+	// Breakpoint ( EM )
+	$widthFromMedia: toEm($widthFrom);
+	$widthToMedia: toEm($widthTo);
+
+	// Floating value formula
+	// Sourse: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+	$slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
+	$yIntersection: -$widthTo * $slope + $minSize;
+	@if ($yIntersection==0) {
+		$yIntersection: 0.000001;
+	}
+	$flyValue: #{toRem($yIntersection)}" + " #{$slope * 100}vw;
+
+	// Getting a property value
+	$propertyValue: #{"clamp(" toRem($minSize) "," $flyValue "," toRem($startSize) ")"};
+	// If negative values
+	@if ($minSize > $startSize) {
+		$propertyValue: #{"clamp(" toRem($startSize) "," $flyValue "," toRem($minSize) ")"};
+	}
+
+	// Setting the default values
+	@if $keepSize != 1 and $keepSize != 3 {
+		@media (min-width: $widthFromMedia) {
+			#{$property}: toRem($startSize);
+		}
+	}
+	// Adapt the size in the gap between the specified entry widths
+	@media (min-width: $widthToMedia) and (max-width: $widthFromMedia) {
+		// If clamp() is supported;
+		@supports (#{$property}: $propertyValue) {
+			#{$property}: $propertyValue;
+		}
+		// If clamp() is not supported;
+		@supports not (#{$property}: $propertyValue) {
+			#{$property}: calc(#{toRem($minSize)} + #{$addSize} * (100vw - #{toRem($widthTo)}) / #{math.div($widthFrom, 16) - math.div($widthTo, 16)});
+		}
+	}
+	@if $keepSize != 1 and $keepSize != 2 {
+		@media (max-width: $widthToMedia) {
+			#{$property}: toRem($minSize);
+		}
+	}
+}

@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'social-links';
+  src: url('../fonts/social-links.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'social-links' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.twitter:before {
+  content: "\e900";
+}
+
+.facebook:before {
+  content: "\f09a";
+}
+
+.linkedin:before {
+  content: "\f0e1";
+}
+
+.instagram:before {
+  content: "\f16d";
+}
+
+.google:before {
+  content: "\f1a0";
+}
+
+.whatsapp:before {
+  content: "\ea93";
+}
+
+
+/** Style */
+.wcl-social-links {
+  @include wcl-reset-list;
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  a {
+    @include wcl-reset-link;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    padding: 10px 16px;
+    color: var(--primary-color);
+    border-radius: 16px;
+    border: 1px solid var(--primary-color);
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: var(--milc-color);
+        background: var(--primary-color);
+      }
+    }
+  }
+
+  i {
+    font-size: 20px;
+  }
+}
