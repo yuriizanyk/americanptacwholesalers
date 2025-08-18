@@ -14,7 +14,7 @@
 // define( 'EMAIL_SENDER', $_ENV['EMAIL_SENDER'] );
 
 /** @desc Other variables */
-define( 'WCL_THEME_VERSION', '0.0.2' );
+define( 'WCL_THEME_VERSION', '0.0.3' );
 define( 'SITE_NAME', get_bloginfo( 'name' ) );
 define( 'WCL_CONTACT_MAIL', 'admin@mail.com' );
 
@@ -88,10 +88,36 @@ add_filter( 'big_image_size_threshold', '__return_false' );
 
 
 /** Add custom image sizes */
-/*
+
 add_image_size( 'banner-image', 1140, 0, false );
 add_image_size( 'banner-image@2x', 2280, 0, false );
-*/
+
+add_image_size( 'logo', 75, 0, false );
+add_image_size( 'logo@2x', 150, 0, false );
+
+add_image_size( 'icon', 50, 0, false );
+add_image_size( 'icon@2x', 100, 0, false );
+
+add_image_size( 'icon-md', 150, 0, false );
+add_image_size( 'icon-md@2x', 300, 0, false );
+
+add_image_size( 'square-sm', 75, 0, false );
+add_image_size( 'square-sm@2x', 150, 0, false );
+
+add_image_size( 'square-md', 250, 0, false );
+add_image_size( 'square-md@2x', 500, 0, false );
+
+add_image_size( 'landscape-sm', 400, 250, false );
+add_image_size( 'landscape-sm@2x', 800, 500, false );
+
+add_image_size( 'landscape-md', 550, 400, false );
+add_image_size( 'landscape-md@2x', 1100, 800, false );
+
+add_image_size( 'portrait-sm', 200, 300, false );
+add_image_size( 'portrait-sm@2x', 400, 600, false );
+
+add_image_size( 'portrait-md', 400, 500, false );
+add_image_size( 'portrait-md@2x', 800, 1000, false );
 
 
 /* * Support HTML 5 tags for styles and scripts */
@@ -145,8 +171,8 @@ function wcl_custom_login_logo() {
         }
 
         #login h1 a, .login h1 a {
-            background-image: url(' . get_stylesheet_directory_uri() . '/assets/img/wcl-logo.png);
-            height: 80px !important; /* Change the height as needed */
+            background-image: url(' . get_stylesheet_directory_uri() . '/assets/img/logo.svg);
+            height: 130px !important; /* Change the height as needed */
             width: 100% !important; /* Use 100% width for responsiveness */
             background-size: 100% !important; /* Adjust this property as needed */
         }
@@ -211,3 +237,6 @@ require_once get_theme_file_path( '/inc/shortcodes/social-links.php' );
 
 // Cron
 // require_once get_theme_file_path( '/inc/cron/update-rates.php' );
+
+// Disabling the generation of <p> tags in the form of cf7
+add_filter('wpcf7_autop_or_not', '__return_false');

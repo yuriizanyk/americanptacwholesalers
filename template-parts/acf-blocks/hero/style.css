@@ -1,0 +1,201 @@
+.wcl-hero__container {
+  position: relative;
+  height: 100vh;
+  min-height: 800px;
+}
+.wcl-hero__bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1920px;
+  max-height: 570px;
+  height: 100%;
+}
+.wcl-hero__bg::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 2px);
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.9) 15%, transparent 50%, rgba(255, 255, 255, 0.9) 85%, white 100%);
+}
+.wcl-hero__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.wcl-hero__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+  padding: 70px 15px 100px;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wcl-hero__title {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+.wcl-hero__text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.55;
+  margin-bottom: 40px;
+}
+.wcl-hero__links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.wcl-hero__logos {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1920px;
+  height: 80px;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  overflow: hidden;
+}
+.wcl-hero__logos::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, white 0%, transparent 15%, transparent 85%, white 100%);
+}
+.wcl-hero__logos-inner {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  animation: scroll-left 60s linear infinite;
+}
+.wcl-hero__logos-list {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+  margin-left: 90px;
+}
+.wcl-hero__logo {
+  width: 180px;
+  height: 100%;
+  max-height: 80px;
+  overflow: hidden;
+}
+.wcl-hero__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 23.4375em) and (max-width: 120em) {
+  @supports (margin-bottom: clamp( 3.125rem , 1.9872572816rem  +  4.854368932vw , 7.8125rem )) {
+    .wcl-hero {
+      margin-bottom: clamp( 3.125rem , 1.9872572816rem  +  4.854368932vw , 7.8125rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 3.125rem , 1.9872572816rem  +  4.854368932vw , 7.8125rem )) {
+    .wcl-hero {
+      margin-bottom: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 96.5625);
+    }
+  }
+  @supports (font-size: clamp( 2rem , 1.5145631068rem  +  2.071197411vw , 4rem )) {
+    .wcl-hero__title {
+      font-size: clamp( 2rem , 1.5145631068rem  +  2.071197411vw , 4rem );
+    }
+  }
+  @supports not (font-size: clamp( 2rem , 1.5145631068rem  +  2.071197411vw , 4rem )) {
+    .wcl-hero__title {
+      font-size: calc(2rem + 2 * (100vw - 23.4375rem) / 96.5625);
+    }
+  }
+}
+@media (min-width: 120em) {
+  .wcl-hero {
+    margin-bottom: 7.8125rem;
+  }
+  .wcl-hero__title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wcl-hero__logos-list {
+    gap: 70px;
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wcl-hero__content {
+    padding-top: 55px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wcl-hero__logos-list {
+    gap: 50px;
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .wcl-hero__content {
+    padding-top: 40px;
+  }
+  .wcl-hero__text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .wcl-hero__links {
+    flex-direction: column;
+  }
+  .wcl-hero__logos {
+    height: 60px;
+  }
+  .wcl-hero__logo {
+    max-height: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wcl-hero__logos-list {
+    gap: 30px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 23.4375em) {
+  .wcl-hero {
+    margin-bottom: 3.125rem;
+  }
+  .wcl-hero__title {
+    font-size: 2rem;
+  }
+}
