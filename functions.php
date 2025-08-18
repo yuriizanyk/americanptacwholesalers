@@ -14,7 +14,7 @@
 // define( 'EMAIL_SENDER', $_ENV['EMAIL_SENDER'] );
 
 /** @desc Other variables */
-define( 'WCL_THEME_VERSION', '0.0.1' );
+define( 'WCL_THEME_VERSION', '0.0.2' );
 define( 'SITE_NAME', get_bloginfo( 'name' ) );
 define( 'WCL_CONTACT_MAIL', 'admin@mail.com' );
 
@@ -104,14 +104,14 @@ add_action( 'after_setup_theme', 'wcl_add_theme_support' );
 
 
 /** Register Nav Manus */
-/*
+
 function wcl_register_nav_menus() {
 	register_nav_menu( 'header-menu', 'Header Menu' );
 	register_nav_menu( 'footer-menu', 'Footer Menu' );
 }
 
 add_action( 'after_setup_theme', 'wcl_register_nav_menus' );
-*/
+
 
 
 /** ACF Option Page */

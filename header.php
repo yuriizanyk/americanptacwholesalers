@@ -19,12 +19,31 @@
     DEVELOPED BY WebComplete (webcomplete.io)
 ====================================================================
  -->
-<?php //$logo = get_field( 'header_logo', 'option' ); ?>
+<?php $header_logo = get_field('header_logo', 'option'); ?>
 
-<div class="wcl-body-inner">
-    <!-- HEADER -->
-    <header id="wcl-header" class="wcl-header">
-        <div class="wcl-container">
-            <h1>American PTAC Salers coming soon</h1>
-        </div>
-    </header>
+    <div class="wcl-body-inner">
+        <!-- HEADER -->
+        <header id="wcl-header" class="wcl-header">
+            <div class="wcl-header__container wcl-section-inner">
+                <div class="wcl-header__body">
+
+                    <a class="wcl-header__logo" href="<?= esc_url(home_url('/')); ?>" aria-label="Site Logo">
+                        <?= wp_get_attachment_image($header_logo, 'logo'); ?>
+                    </a>
+
+                    <div class="wcl-header__menu menu">
+                        <nav class="menu__body" id="main-menu">
+
+                            <?php wp_nav_menu([
+                                'theme_location' => 'header-menu',
+                                'container' => 'false',
+                                'menu_class' => 'menu__list'
+                            ]); ?>
+                        </nav>
+                    </div>
+
+                    <button type="button" class="menu__icon menu-icon" aria-label="Open-close menu button">
+                        <span></span>
+                    </button>
+                </div>
+        </header>
