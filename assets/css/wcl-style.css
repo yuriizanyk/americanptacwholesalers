@@ -2,7 +2,8 @@
   --white-color: #FFF;
   --black-color: #000;
   --dark-color: #222;
-  --gray-color: #666;
+  --green-color: #3D7E71;
+  --green-hover: rgb(61, 127, 114, .5);
   --transition: all .25s ease-in;
 }
 
@@ -282,13 +283,14 @@ main {
   flex-grow: 1;
 }
 
-.wcl-section .wcl-container {
+.wcl-section,
+.wcl-container {
   width: 100%;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .wcl-section-inner {
@@ -403,11 +405,13 @@ ol {
   color: inherit;
   text-align: inherit;
   cursor: pointer;
-  padding: 14px 35px;
+  padding: 16px 32px;
   font-size: 18px;
+  line-height: 1.55;
   font-weight: 700;
-  border-radius: 100px;
+  border-radius: 30px;
   text-align: center;
+  transition: var(--transition);
 }
 .wcl-button:focus {
   outline: none;
@@ -415,6 +419,23 @@ ol {
 .wcl-button:active, .wcl-button:focus, .wcl-button:hover {
   box-shadow: none;
   outline: none;
+}
+.wcl-button--green {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border: 1px solid var(--green-color);
+}
+.wcl-button--green:hover {
+  background-color: var(--green-hover);
+}
+.wcl-button--white {
+  background-color: var(--white-color);
+  color: var(--green-color);
+  border: 1px solid var(--green-color);
+}
+.wcl-button--white:hover {
+  background-color: var(--green-hover);
+  color: var(--white-color);
 }
 
 @font-face {
@@ -620,12 +641,6 @@ i {
   background-color: var(--dark-color);
   transition: var(--transition);
 }
-@media only screen and (max-width: 1280px) {
-  .wcl-section .wcl-container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
 @media (max-width: 768px) {
   .menu-icon {
     display: inline-block;
@@ -662,7 +677,8 @@ i {
   }
 }
 @media only screen and (max-width: 768px) {
-  .wcl-section .wcl-container {
+  .wcl-section,
+  .wcl-container {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -689,6 +705,10 @@ i {
   h6,
   .wcl-h6 {
     font-size: 1rem;
+  }
+  .wcl-button {
+    padding: 12px 24px;
+    font-size: 16px;
   }
   .wcl-header__container {
     padding-top: 6px;

@@ -4,7 +4,7 @@ $footer_logo = get_field('footer_logo', 'option');
 
 <!-- FOOTER -->
 <footer id="wcl-footer" class="wcl-footer">
-    <div class="wcl-footer__container wcl-section-inner">
+    <!-- <div class="wcl-footer__container wcl-section-inner">
         <div class="wcl-footer__body">
             <div class="wcl-footer__logo">
                 <a class="wcl-footer__logo-link" href="<?= esc_url(home_url('/')); ?>" aria-label="Site Logo">
@@ -22,7 +22,7 @@ $footer_logo = get_field('footer_logo', 'option');
                 </nav>
             </div>
         </div>
-    </div>
+    </div> -->
 </footer>
 </div>
 
