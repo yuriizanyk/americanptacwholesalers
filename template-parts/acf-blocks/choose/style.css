@@ -130,8 +130,6 @@
     grid-column: span 1;
     max-width: 100%;
   }
-}
-@media only screen and (max-width: 576px) {
   .wcl-choose__item-icon {
     width: 100px;
     height: 100px;
@@ -139,6 +137,16 @@
   .wcl-choose__item-icon img {
     width: 50px;
     height: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .wcl-choose__item-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .wcl-choose__item-icon img {
+    width: 40px;
+    height: 40px;
   }
 }
 @media (max-width: 23.4375em) {

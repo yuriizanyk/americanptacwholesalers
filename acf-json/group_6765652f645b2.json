@@ -94,8 +94,8 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_676ee2f130c2e",
-            "label": "Contacts",
+            "key": "field_68a479cf0fb15",
+            "label": "Socials",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -109,15 +109,14 @@
             },
             "placement": "top",
             "endpoint": 0,
-            "selected": 0,
-            "wpml_cf_preferences": 1
+            "selected": 0
         },
         {
-            "key": "field_676ee31e30c2f",
-            "label": "Email",
-            "name": "contact_email",
+            "key": "field_68a47933dfcd6",
+            "label": "Socials",
+            "name": "socials",
             "aria-label": "",
-            "type": "email",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -126,32 +125,60 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "allow_in_bindings": 0,
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_676ee39130c30",
-            "label": "Phone",
-            "name": "contact_phone",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "allow_in_bindings": 0,
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Social",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_68a47952dfcd7",
+                    "label": "Social Icon",
+                    "name": "social_icon",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Recommended size 100x100px",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "thumbnail",
+                    "parent_repeater": "field_68a47933dfcd6"
+                },
+                {
+                    "key": "field_68a47974dfcd8",
+                    "label": "Social Link",
+                    "name": "social_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_68a47933dfcd6"
+                }
+            ]
         }
     ],
     "location": [
@@ -172,5 +199,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755506661
+    "modified": 1755609652
 }
