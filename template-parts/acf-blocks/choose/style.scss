@@ -1,0 +1,120 @@
+@import "assets/scss/utils/media";
+@import "assets/scss/utils/mixings";
+
+.wcl-choose {
+    @include adaptiveValue("margin-top", 125, 50, 0, 1440, 375);
+    @include adaptiveValue("margin-bottom", 125, 50, 0, 1440, 375);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__header {
+        width: 100%;
+        max-width: 636px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include adaptiveValue("margin-bottom", 55, 25, 0, 1440, 375);
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+
+        @media only screen and (max-width: $media-lg) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media only screen and (max-width: $media-md) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__item {
+        border-radius: 35px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        &:nth-child(3) {
+            @media only screen and (max-width: $media-lg) {
+                grid-column: span 2;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+
+            @media only screen and (max-width: $media-md) {
+                grid-column: span 1;
+                max-width: 100%;
+            }
+        }
+    }
+
+    &__item-icon {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-color);
+
+        @media only screen and (max-width: $media-sm) {
+            width: 100px;
+            height: 100px;
+        }
+
+        img {
+            width: 74px;
+            height: 74px;
+            object-fit: contain;
+            object-position: center;
+
+            @media only screen and (max-width: $media-sm) {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    &__item-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media only screen and (max-width: $media-lg) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &__item-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__item-text {
+        text-align: center;
+        font-size: 16px;
+    }
+}
