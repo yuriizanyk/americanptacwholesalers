@@ -1,10 +1,13 @@
 {
-    "name": "wcl/choose",
-    "version": "0.0.4",
-    "title": "Choose",
-    "description": "A custom Choose block",
+    "name": "wcl/contact",
+    "version": "0.0.1",
+    "title": "Contact",
+    "description": "A custom Contact block",
     "style": [
         "file:./style.css"
+    ],
+    "script": [
+        "file:./script.js"
     ],
     "category": "webcomplete",
     "icon": "block-default",
