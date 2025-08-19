@@ -1,13 +1,10 @@
 {
     "name": "wcl/action",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "title": "Action",
     "description": "A custom Action block",
     "style": [
         "file:./style.css"
-    ],
-    "script": [
-        "file:./script.js"
     ],
     "category": "webcomplete",
     "icon": "block-default",
