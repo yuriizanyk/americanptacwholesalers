@@ -61,6 +61,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./template-parts/acf-blocks/advantages/style.scss":
+/*!*********************************************************!*\
+  !*** ./template-parts/acf-blocks/advantages/style.scss ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi90ZW1wbGF0ZS1wYXJ0cy9hY2YtYmxvY2tzL2FkdmFudGFnZXMvc3R5bGUuc2NzcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly93Y2xfd2VicGFja19jb25maWcvLi90ZW1wbGF0ZS1wYXJ0cy9hY2YtYmxvY2tzL2FkdmFudGFnZXMvc3R5bGUuc2Nzcz83ODEwIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./template-parts/acf-blocks/advantages/style.scss\n");
+
+/***/ }),
+
 /***/ "./assets/scss/wcl-style.scss":
 /*!************************************!*\
   !*** ./assets/scss/wcl-style.scss ***!
@@ -220,6 +231,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 			"template-parts/acf-blocks/hero/style": 0,
 /******/ 			"assets/css/wcl-admin-style": 0,
 /******/ 			"assets/css/wcl-style": 0,
+/******/ 			"template-parts/acf-blocks/advantages/style": 0,
 /******/ 			"template-parts/acf-blocks/choose/style": 0
 /******/ 		};
 /******/ 		
@@ -270,16 +282,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/js/scripts/animations.js")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/js/scripts/example.js")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/js/scripts/helpers.js")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/js/scripts/menu-open.js")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/scss/wcl-style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/scss/wcl-admin-style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./template-parts/acf-blocks/hero/style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./template-parts/acf-blocks/solutions/style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./template-parts/acf-blocks/action/style.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./template-parts/acf-blocks/choose/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/js/scripts/animations.js")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/js/scripts/example.js")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/js/scripts/helpers.js")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/js/scripts/menu-open.js")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/scss/wcl-style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./assets/scss/wcl-admin-style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./template-parts/acf-blocks/hero/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./template-parts/acf-blocks/solutions/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./template-parts/acf-blocks/action/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./template-parts/acf-blocks/choose/style.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style","template-parts/acf-blocks/advantages/style","template-parts/acf-blocks/choose/style"], () => (__webpack_require__("./template-parts/acf-blocks/advantages/style.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

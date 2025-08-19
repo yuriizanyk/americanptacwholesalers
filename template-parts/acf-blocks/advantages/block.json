@@ -1,10 +1,13 @@
 {
-    "name": "wcl/solutions",
-    "version": "0.0.2",
-    "title": "Solutions",
-    "description": "A custom Solutions block",
+    "name": "wcl/advantages",
+    "version": "0.0.1",
+    "title": "Advantages",
+    "description": "A custom Advantages block",
     "style": [
         "file:./style.css"
+    ],
+    "script": [
+        "file:./script.js"
     ],
     "category": "webcomplete",
     "icon": "block-default",
