@@ -92,6 +92,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi90ZW1wbGF0ZS1wYXJ0cy9hY2YtYmxvY2tzL3NvbHV0aW9ucy9zdHlsZS5zY3NzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL3djbF93ZWJwYWNrX2NvbmZpZy8uL3RlbXBsYXRlLXBhcnRzL2FjZi1ibG9ja3Mvc29sdXRpb25zL3N0eWxlLnNjc3M/NzVmMSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./template-parts/acf-blocks/solutions/style.scss\n");
 
+/***/ }),
+
+/***/ "./template-parts/acf-blocks/action/style.scss":
+/*!*****************************************************!*\
+  !*** ./template-parts/acf-blocks/action/style.scss ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi90ZW1wbGF0ZS1wYXJ0cy9hY2YtYmxvY2tzL2FjdGlvbi9zdHlsZS5zY3NzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL3djbF93ZWJwYWNrX2NvbmZpZy8uL3RlbXBsYXRlLXBhcnRzL2FjZi1ibG9ja3MvYWN0aW9uL3N0eWxlLnNjc3M/MmUxMCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./template-parts/acf-blocks/action/style.scss\n");
+
 /***/ })
 
 /******/ 	});
@@ -193,6 +204,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/assets/js/wcl-scripts": 0,
+/******/ 			"template-parts/acf-blocks/action/style": 0,
 /******/ 			"template-parts/acf-blocks/solutions/style": 0,
 /******/ 			"template-parts/acf-blocks/hero/style": 0,
 /******/ 			"assets/css/wcl-admin-style": 0,
@@ -246,14 +258,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/js/scripts/animations.js")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/js/scripts/example.js")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/js/scripts/helpers.js")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/js/scripts/menu-open.js")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/scss/wcl-style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/scss/wcl-admin-style.scss")))
-/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./template-parts/acf-blocks/hero/style.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./template-parts/acf-blocks/solutions/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/js/scripts/animations.js")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/js/scripts/example.js")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/js/scripts/helpers.js")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/js/scripts/menu-open.js")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/scss/wcl-style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./assets/scss/wcl-admin-style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./template-parts/acf-blocks/hero/style.scss")))
+/******/ 	__webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./template-parts/acf-blocks/solutions/style.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["template-parts/acf-blocks/action/style","template-parts/acf-blocks/solutions/style","template-parts/acf-blocks/hero/style","assets/css/wcl-admin-style","assets/css/wcl-style"], () => (__webpack_require__("./template-parts/acf-blocks/action/style.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

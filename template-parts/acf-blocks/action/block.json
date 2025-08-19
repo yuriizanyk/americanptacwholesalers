@@ -1,8 +1,8 @@
 {
-    "name": "wcl/hero",
-    "version": "0.0.3",
-    "title": "Hero",
-    "description": "A custom Hero block",
+    "name": "wcl/action",
+    "version": "0.0.1",
+    "title": "Action",
+    "description": "A custom Action block",
     "style": [
         "file:./style.css"
     ],

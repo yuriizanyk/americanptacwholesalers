@@ -1,6 +1,5 @@
 .wcl-hero__container {
   position: relative;
-  height: 100vh;
   min-height: 800px;
 }
 .wcl-hero__bg {
@@ -144,6 +143,12 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .wcl-hero__container {
+    min-height: 700px;
+  }
+  .wcl-hero__bg {
+    max-height: 400px;
+  }
   .wcl-hero__content {
     padding-top: 55px;
   }
@@ -167,6 +172,9 @@
   }
   .wcl-hero__logos {
     height: 60px;
+  }
+  .wcl-hero__logos-inner {
+    animation: scroll-left 40s linear infinite;
   }
   .wcl-hero__logo {
     max-height: 60px;
