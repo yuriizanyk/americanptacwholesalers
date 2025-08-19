@@ -44,7 +44,7 @@ $advantages_repeater = get_field( 'advantages_repeater' );
             <?php foreach ($advantages_repeater as $advantage): ?>
                 <div class="wcl-advantages__item">
                     <div class="wcl-advantages__item-icon">
-                        <?= wp_get_attachment_image($advantage['advantages_icon'], 'square-sm'); ?>
+                        <?= wp_get_attachment_image($advantage['advantages_icon'], 'icon'); ?>
                     </div>
                     <div class="wcl-advantages__item-content">
                         <h3 class="wcl-advantages__item-title wcl-h3"><?= $advantage['advantages_title']; ?></h3>

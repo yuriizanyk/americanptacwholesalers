@@ -1,6 +1,6 @@
 {
     "name": "wcl/hero",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "title": "Hero",
     "description": "A custom Hero block",
     "style": [
