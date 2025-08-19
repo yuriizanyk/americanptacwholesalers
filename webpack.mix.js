@@ -42,3 +42,6 @@ mix.sass('template-parts/acf-blocks/choose/style.scss', 'template-parts/acf-bloc
 
 mix.sass('template-parts/acf-blocks/advantages/style.scss', 'template-parts/acf-blocks/advantages')
     .sourceMaps();
+
+mix.sass('template-parts/acf-blocks/testimonials/style.scss', 'template-parts/acf-blocks/testimonials')
+    .sourceMaps();

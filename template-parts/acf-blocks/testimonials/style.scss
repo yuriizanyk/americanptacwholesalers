@@ -1,0 +1,236 @@
+@import "assets/scss/utils/media";
+@import "assets/scss/utils/mixings";
+
+.wcl-testimonials {
+    @include adaptiveValue("margin-top", 125, 50, 0, 1440, 375);
+    @include adaptiveValue("margin-bottom", 125, 50, 0, 1440, 375);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        @include adaptiveValue("gap", 55, 25, 0, 1440, 375);
+    }
+
+    &__header {
+        width: 100%;
+        max-width: 636px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &__list.wcl-section-inner {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media only screen and (max-width: 890px) {
+            padding: 0;
+            overflow: hidden;
+        }
+    }
+
+    &__decor {
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        width: fit-content;
+        max-width: 632px;
+        height: auto;
+
+        @media only screen and (max-width: 900px) {
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            max-width: 750px;
+        }
+
+        @media only screen and (max-width: $media-md) {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__slider-container {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 860px;
+    }
+
+    &__slider.swiper {
+        width: 100%;
+    }
+
+    &__slider-wrapper.swiper-wrapper {
+        width: 100%;
+    }
+
+    &__slide.swiper-slide {
+        width: 100%;
+    }
+
+    &__content {
+        background-color: var(--bg-color);
+        border-radius: 35px;
+        padding: 35px;
+        margin: 0 12px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 10px;
+    }
+
+    &__image {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__person {
+    }
+
+    &__name {
+        font-size: 18px;
+    }
+
+    &__position {
+        font-size: 14px;
+    }
+
+    &__rating {
+        margin-bottom: 15px;
+    }
+
+    &__review {
+        font-size: 16px;
+    }
+
+    &__pagination.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+        position: static;
+        padding-top: 20px;
+
+        .swiper-pagination-bullet {
+            background-color: rgba(61, 126, 113, 0.25);
+            opacity: 1;
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+
+            &-active {
+                background-color: #3D7E71;
+            }
+        }
+    }
+}
+
+.rating {
+	display: inline-flex;
+	gap: 15px;
+	align-items: center;
+
+	&__items {
+		display: inline-flex;
+		align-items: flex-start;
+		gap: 7px;
+		height: 22px;
+		.rating--set & {
+			@media (any-hover: hover) {
+				&:hover {
+					.rating__item {
+						background: url("./icons/star-active.svg") 0 0 / 22px no-repeat;
+					}
+				}
+			}
+		}
+	}
+
+	&__item {
+		flex-shrink: 0;
+		width: 22px;
+		position: relative;
+		background: url("./icons/star.svg") 0 0 / 22px no-repeat;
+		&.active {
+			background: url("./icons/star-active.svg") 0 0 / 22px no-repeat;
+		}
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0%;
+			height: 22px;
+			background: url("./icons/star-active.svg") 0 0 / 22px no-repeat;
+		}
+		&:not(:last-child) {
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 100%;
+				width: 7px;
+				transform: translateX(100%);
+			}
+		}
+		.rating--set & {
+			@media (any-hover: hover) {
+				&:hover {
+					~ .rating__item {
+						background: url("./icons/star.svg") 0 0 / 22px no-repeat;
+						span {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__input {
+		aspect-ratio: 1 / 1;
+		width: 100%;
+		opacity: 0;
+		.rating--set & {
+			cursor: pointer;
+		}
+	}
+
+	&__value {
+		font-weight: 500;
+		font-size: 18px;
+	}
+}

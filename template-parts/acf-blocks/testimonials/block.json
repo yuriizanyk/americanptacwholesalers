@@ -1,8 +1,8 @@
 {
-    "name": "wcl/advantages",
-    "version": "0.0.2",
-    "title": "Advantages",
-    "description": "A custom Advantages block",
+    "name": "wcl/testimonials",
+    "version": "0.0.1",
+    "title": "Testimonials",
+    "description": "A custom Testimonials block",
     "style": [
         "file:./style.css"
     ],
