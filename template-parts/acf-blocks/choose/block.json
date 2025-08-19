@@ -1,0 +1,33 @@
+{
+    "name": "wcl/choose",
+    "version": "0.0.1",
+    "title": "Choose",
+    "description": "A custom Choose block",
+    "style": [
+        "file:./style.css"
+    ],
+    "script": [
+        "file:./script.js"
+    ],
+    "category": "webcomplete",
+    "icon": "block-default",
+    "keywords": [
+        "webcomplete"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "render.php",
+        "validate": "false"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "is_example": true
+            }
+        }
+    }
+}
