@@ -3,7 +3,7 @@
   --black-color: #000;
   --dark-color: #222;
   --green-color: #3D7E71;
-  --green-hover: rgb(61, 127, 114, .5);
+  --green-hover: #ADC7C2;
   --bg-color: #F9F9F9;
   --transition: all .25s ease-in;
 }
@@ -413,6 +413,7 @@ ol {
 }
 .wcl-button--green:hover {
   background-color: var(--green-hover);
+  color: var(--green-color);
 }
 .wcl-button--white {
   background-color: var(--white-color);
@@ -421,7 +422,6 @@ ol {
 }
 .wcl-button--white:hover {
   background-color: var(--green-hover);
-  color: var(--white-color);
 }
 
 @font-face {

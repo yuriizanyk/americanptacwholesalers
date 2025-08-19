@@ -35,3 +35,6 @@ mix.sass('template-parts/acf-blocks/hero/style.scss', 'template-parts/acf-blocks
 
 mix.sass('template-parts/acf-blocks/solutions/style.scss', 'template-parts/acf-blocks/solutions')
     .sourceMaps();
+    
+mix.sass('template-parts/acf-blocks/action/style.scss', 'template-parts/acf-blocks/action')
+    .sourceMaps();
