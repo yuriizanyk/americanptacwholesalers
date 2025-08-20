@@ -14,4 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
         menuBody.classList.toggle('is-open');
         body.classList.toggle('lock');
     });
+
+    const menuItems = menuBody.querySelectorAll('.menu-item a');
+    menuItems.forEach(item => {
+        item.addEventListener('click', function () {
+            menuIcon.classList.remove('is-open');
+            menuBody.classList.remove('is-open');
+            body.classList.remove('lock');
+        });
+    });
 });
