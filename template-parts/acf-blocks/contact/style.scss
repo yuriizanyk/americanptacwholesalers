@@ -273,6 +273,7 @@
         &:first-child {
             .wcl-contact__contacts-item-connect {
                 max-width: 290px;
+                width: fit-content;
             }
         }
 
@@ -320,6 +321,7 @@
     }
 
     &__contacts-item-connect {
+        width: fit-content;
         position: relative;
         text-decoration: none;
         color: inherit;
@@ -335,7 +337,7 @@
             content: "";
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
             width: 0;
             height: 1px;
             background-color: var(--green-color);
@@ -348,6 +350,7 @@
             }
 
             &:hover::after {
+                left: 0;
                 width: 100%;
             }
         }
