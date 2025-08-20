@@ -54,3 +54,6 @@ mix.sass('template-parts/acf-blocks/page-hero/style.scss', 'template-parts/acf-b
 
 mix.sass('template-parts/acf-blocks/page-info/style.scss', 'template-parts/acf-blocks/page-info')
     .sourceMaps();
+
+mix.sass('template-parts/acf-blocks/help/style.scss', 'template-parts/acf-blocks/help')
+    .sourceMaps();

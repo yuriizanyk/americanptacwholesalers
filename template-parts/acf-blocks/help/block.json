@@ -1,0 +1,30 @@
+{
+    "name": "wcl/help",
+    "version": "0.0.1",
+    "title": "Help",
+    "description": "A custom Help block",
+    "style": [
+        "file:./style.css"
+    ],
+    "category": "webcomplete",
+    "icon": "block-default",
+    "keywords": [
+        "webcomplete"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "render.php",
+        "validate": "false"
+    },
+    "supports": {
+        "anchor": true
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "is_example": true
+            }
+        }
+    }
+}

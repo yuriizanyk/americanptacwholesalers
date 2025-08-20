@@ -1,0 +1,88 @@
+@import "assets/scss/utils/media";
+@import "assets/scss/utils/mixings";
+
+.wcl-help {
+    @include adaptiveValue("margin-top", 125, 50, 0, 1440, 375);
+    @include adaptiveValue("margin-bottom", 55, 25, 0, 1440, 375);
+
+    &__container {
+        padding-top: 55px;
+        padding-bottom: 55px;
+        border-radius: 35px;
+        overflow: hidden;
+
+        @media screen and (max-width: 1920px) {
+            border-radius: 0    ;
+        }
+
+        &--white {
+            background-color: var(--white-color);
+        }
+
+        &--green {
+            background-color: var(--bg-color);
+        }
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media screen and (max-width: $media-md) {
+            flex-direction: column;
+        }
+    }
+
+    &__body {
+        width: 100%;
+        max-width: 746px;
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: $media-md) {
+            align-items: center;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        @media screen and (max-width: $media-md) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+
+        @media screen and (max-width: $media-md) {
+            text-align: center;
+        }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @media screen and (max-width: $media-lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__link {
+        min-width: 178px;
+    }
+
+    &__link-text {
+        width: 157px;
+        font-size: 14px;
+
+        @media screen and (max-width: $media-md) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
