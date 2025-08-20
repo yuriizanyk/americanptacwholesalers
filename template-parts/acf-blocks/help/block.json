@@ -1,6 +1,6 @@
 {
     "name": "wcl/help",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "title": "Help",
     "description": "A custom Help block",
     "style": [

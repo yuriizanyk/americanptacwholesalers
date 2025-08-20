@@ -6,8 +6,8 @@
 }
 .wcl-help__container--white {
   background-color: var(--white-color);
-  padding-top: 0;
-  padding-bottom: 25px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 .wcl-help__container--green {
   background-color: var(--bg-color);
@@ -41,30 +41,30 @@
   font-size: 14px;
 }
 @media (min-width: 23.4375em) and (max-width: 90em) {
-  @supports (margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+  @supports (margin-top: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
     .wcl-help {
-      margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem );
+      margin-top: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem );
     }
   }
-  @supports not (margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+  @supports not (margin-top: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
     .wcl-help {
-      margin-top: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 66.5625);
+      margin-top: calc(1.875rem + 1.5625 * (100vw - 23.4375rem) / 66.5625);
     }
   }
-  @supports (margin-bottom: clamp( 1.5625rem , 0.9022887324rem  +  2.8169014085vw , 3.4375rem )) {
+  @supports (margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
     .wcl-help {
-      margin-bottom: clamp( 1.5625rem , 0.9022887324rem  +  2.8169014085vw , 3.4375rem );
+      margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem );
     }
   }
-  @supports not (margin-bottom: clamp( 1.5625rem , 0.9022887324rem  +  2.8169014085vw , 3.4375rem )) {
+  @supports not (margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
     .wcl-help {
-      margin-bottom: calc(1.5625rem + 1.875 * (100vw - 23.4375rem) / 66.5625);
+      margin-bottom: calc(1.875rem + 1.5625 * (100vw - 23.4375rem) / 66.5625);
     }
   }
 }
 @media (min-width: 90em) {
   .wcl-help {
-    margin-top: 7.8125rem;
+    margin-top: 3.4375rem;
   }
   .wcl-help {
     margin-bottom: 3.4375rem;
@@ -81,6 +81,10 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .wcl-help__container--white {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .wcl-help__content {
     flex-direction: column;
   }
@@ -98,11 +102,17 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 576px) {
+  .wcl-help__container--white {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 @media (max-width: 23.4375em) {
   .wcl-help {
-    margin-top: 3.125rem;
+    margin-top: 1.875rem;
   }
   .wcl-help {
-    margin-bottom: 1.5625rem;
+    margin-bottom: 1.875rem;
   }
 }
