@@ -1,8 +1,8 @@
 {
-    "name": "wcl/page-hero",
-    "version": "0.0.2",
-    "title": "Page Hero",
-    "description": "A custom Page Hero block",
+    "name": "wcl/page-info",
+    "version": "0.0.1",
+    "title": "Page Info",
+    "description": "A custom Page Info block",
     "style": [
         "file:./style.css"
     ],
