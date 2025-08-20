@@ -2,8 +2,8 @@
 @import "assets/scss/utils/mixings";
 
 .wcl-help {
-    @include adaptiveValue("margin-top", 125, 50, 0, 1440, 375);
-    @include adaptiveValue("margin-bottom", 55, 25, 0, 1440, 375);
+    @include adaptiveValue("margin-top", 55, 30, 0, 1440, 375);
+    @include adaptiveValue("margin-bottom", 55, 30, 0, 1440, 375);
 
     &__container {
         padding-top: 55px;
@@ -17,8 +17,18 @@
 
         &--white {
             background-color: var(--white-color);
-            padding-top: 0;
-            padding-bottom: 25px;
+            padding-top: 45px;
+            padding-bottom: 45px;
+
+            @media screen and (max-width: $media-md) {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            @media screen and (max-width: $media-sm) {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
         }
 
         &--green {

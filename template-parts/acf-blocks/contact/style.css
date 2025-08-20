@@ -68,6 +68,7 @@
   height: 135px;
   border: 1px solid rgba(61, 126, 113, 0.5019607843);
   border-radius: 15px;
+  font-family: var(--font-onest);
 }
 .wcl-contact__form-container .wpcf7-form__textarea.wpcf7-textarea::-moz-placeholder {
   color: rgba(33, 33, 33, 0.2509803922);
@@ -282,14 +283,14 @@
       margin-top: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 66.5625);
     }
   }
-  @supports (margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+  @supports (margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
     .wcl-contact {
-      margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem );
+      margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem );
     }
   }
-  @supports not (margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+  @supports not (margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
     .wcl-contact {
-      margin-bottom: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 66.5625);
+      margin-bottom: calc(1.875rem + 1.5625 * (100vw - 23.4375rem) / 66.5625);
     }
   }
   @supports (gap: clamp( 1.5625rem , 0.9022887324rem  +  2.8169014085vw , 3.4375rem )) {
@@ -308,7 +309,7 @@
     margin-top: 7.8125rem;
   }
   .wcl-contact {
-    margin-bottom: 7.8125rem;
+    margin-bottom: 3.4375rem;
   }
   .wcl-contact__container {
     gap: 3.4375rem;
@@ -406,7 +407,7 @@
     margin-top: 3.125rem;
   }
   .wcl-contact {
-    margin-bottom: 3.125rem;
+    margin-bottom: 1.875rem;
   }
   .wcl-contact__container {
     gap: 1.5625rem;
