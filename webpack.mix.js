@@ -48,3 +48,6 @@ mix.sass('template-parts/acf-blocks/testimonials/style.scss', 'template-parts/ac
 
 mix.sass('template-parts/acf-blocks/contact/style.scss', 'template-parts/acf-blocks/contact')
     .sourceMaps();
+
+mix.sass('template-parts/acf-blocks/page-hero/style.scss', 'template-parts/acf-blocks/page-hero')
+    .sourceMaps();

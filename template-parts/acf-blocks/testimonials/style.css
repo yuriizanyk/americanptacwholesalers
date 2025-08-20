@@ -52,6 +52,7 @@
   z-index: 1;
   width: 100%;
   max-width: 860px;
+  background-color: var(--white-color);
 }
 .wcl-testimonials__slider.swiper {
   width: 100%;
