@@ -35,14 +35,14 @@ $advantages_repeater = get_field( 'advantages_repeater' );
 <section <?= $anchor; ?>class="wcl-advantages">
     <div class="wcl-advantages__container wcl-section">
         <div class="wcl-advantages__header wcl-section-inner">
-            <h2 class="wcl-advantages__title wcl-h2"><?= $title; ?></h2>
+            <h2 class="wcl-advantages__title wcl-h2 anim-left anim-left--anim"><?= $title; ?></h2>
             <?php if (!empty($text)): ?>
-            <div class="wcl-advantages__text"><?= $text; ?></div>
+            <div class="wcl-advantages__text anim-right anim-right--anim"><?= $text; ?></div>
             <?php endif; ?>
         </div>
-        <div class="wcl-advantages__content wcl-section-inner">
+        <div class="wcl-advantages__content wcl-section-inner anim-content">
             <?php foreach ($advantages_repeater as $advantage): ?>
-                <div class="wcl-advantages__item">
+                <div class="wcl-advantages__item anim-item anim-item--anim">
                     <div class="wcl-advantages__item-icon">
                         <?= wp_get_attachment_image($advantage['advantages_icon'], 'icon'); ?>
                     </div>

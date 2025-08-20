@@ -9,6 +9,45 @@
   --font-onest: "Onest", sans-serif;
 }
 
+[class*="--anim"] {
+  transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+}
+[class*="--anim"].show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.7s ease 0s;
+}
+
+.anim-left {
+  transform: translateX(-100px);
+  opacity: 0;
+  visibility: hidden;
+}
+.anim-left--anim-delay.show-left {
+  transition: all 1.5s ease 0.5s;
+}
+.anim-left.show-left {
+  transition: all 1s ease 0s;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.anim-right {
+  transform: translateX(100px);
+  opacity: 0;
+  visibility: hidden;
+}
+.anim-right.show-right {
+  transition: all 1s ease 0s;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;

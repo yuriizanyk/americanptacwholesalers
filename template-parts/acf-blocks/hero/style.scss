@@ -64,6 +64,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
 
         @media only screen and (max-width: $media-md) {
             padding-top: 55px;

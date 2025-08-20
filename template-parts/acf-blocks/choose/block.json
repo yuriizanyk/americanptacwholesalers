@@ -1,6 +1,6 @@
 {
     "name": "wcl/choose",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "title": "Choose",
     "description": "A custom Choose block",
     "style": [

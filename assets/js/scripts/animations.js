@@ -28,47 +28,21 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(someElement);
     });
 
-    // function animateLogos() {
-    //     const logos = document.querySelectorAll('.wcl-single__logo--anim');
-    //     if (!logos.length) return;
+    function animateBlocks() {
+        const blocks = document.querySelectorAll('.anim-content');
+        if (!blocks.length) return;
 
-    //     logos.forEach((logo, index) => {
-    //         if (!logo) return;
-    //         const delay = index * 0.2;
-    //         logo.style.transitionDelay = `${delay}s`;
-    //     });
-    // }
+        blocks.forEach(block => {
+            const blockItems = block.querySelectorAll('.anim-item');
+            if (!blockItems.length) return;
 
-    // function animateDynamicHeadings() {
-    //     const descriptions = document.querySelectorAll('.wcl-single__description');
-    //     if (!descriptions.length) return;
+            blockItems.forEach((blockItem, index) => {
+                const delay = index * 0.1;
+                blockItem.style.transitionDelay = `${delay}s`;
+                observer.observe(blockItem);
+            });
+        });
+    }
 
-    //     descriptions.forEach((description) => {
-    //         const headings = description.querySelectorAll('h2, h3');
-    //         if (!headings.length) return;
-
-    //         headings.forEach((heading) => {
-    //             heading.classList.add('anim-left', 'anim-left--anim');
-    //             observer.observe(heading);
-    //         });
-    //     });
-    // }
-
-
-    // function animateDynamicGallery() {
-    //     const gallery = document.querySelector('.wcl-single__gallery-items');
-    //     if (!gallery) return;
-
-    //     const galleryItems = gallery.querySelectorAll('.wcl-single__gallery-item');
-    //     if (!galleryItems.length) return;
-    //     galleryItems.forEach((galleryItem, index) => {
-    //         const delay = index * 0.1;
-    //         galleryItem.style.transitionDelay = `${delay}s`;
-    //         observer.observe(galleryItem);
-    //     });
-    // }
-    
-    // animateLogos();
-    // animateDynamicGallery();
-    // animateDynamicHeadings();
+    animateBlocks();
 });

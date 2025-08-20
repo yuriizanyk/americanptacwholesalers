@@ -42,7 +42,7 @@ $product_link = get_field('product_link');
         <div class="wcl-action__content">
             <h2 class="wcl-action__title wcl-h2"><?= $title ?></h2>
             <?php if ($image): ?>
-            <div class="wcl-action__image">
+            <div class="wcl-action__image wcl-action__image--anim">
                 <?= wp_get_attachment_image($image, 'image-lg'); ?>
             </div>
             <?php endif; ?>

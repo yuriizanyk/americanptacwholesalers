@@ -36,7 +36,7 @@ $testimonial_repeater = get_field('testimonial_repeater');
     <section <?= $anchor; ?> class="wcl-testimonials">
         <div class="wcl-testimonials__container">
             <div class="wcl-testimonials__header">
-                <div class="wcl-testimonials__title wcl-h2"><?= $title; ?></div>
+                <div class="wcl-testimonials__title wcl-h2 wcl-h2--anim"><?= $title; ?></div>
                 <div class="wcl-testimonials__text"><?= $text; ?></div>
             </div>
             <div class="wcl-testimonials__list wcl-section-inner">
