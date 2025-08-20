@@ -95,7 +95,11 @@
         background-color: var(--bg-color);
         border-radius: 35px;
         padding: 35px;
-        margin: 0 12px;
+        margin-right: 24px;
+
+        @media only screen and (max-width: 890px) {
+            margin: 0 12px;
+        }
     }
 
     &__info {

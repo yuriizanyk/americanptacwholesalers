@@ -361,6 +361,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .wcl-contact__container {
+    padding: 45px 15px 55px;
+  }
   .wcl-contact__contacts {
     padding: 30px 15px;
   }
