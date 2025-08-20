@@ -1,13 +1,10 @@
 {
-    "name": "wcl/hero",
-    "version": "0.0.6",
-    "title": "Home Page Hero",
-    "description": "A custom Home Page Hero block",
+    "name": "wcl/page-hero",
+    "version": "0.0.1",
+    "title": "Page Hero",
+    "description": "A custom Page Hero block",
     "style": [
         "file:./style.css"
-    ],
-    "script": [
-        "file:./script.js"
     ],
     "category": "webcomplete",
     "icon": "block-default",

@@ -1,10 +1,10 @@
 {
-    "key": "group_68a2f71e28dec",
-    "title": "Home Page Hero",
+    "key": "group_68a59c2da6555",
+    "title": "Page Hero",
     "fields": [
         {
-            "key": "field_68a2f71ec9910",
-            "label": "Home Page Hero",
+            "key": "field_68a59c2df5931",
+            "label": "Page Hero",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -21,7 +21,7 @@
             "esc_html": 0
         },
         {
-            "key": "field_68a2f72ec9911",
+            "key": "field_68a59ca77eabf",
             "label": "Title",
             "name": "title",
             "aria-label": "",
@@ -42,7 +42,7 @@
             "append": ""
         },
         {
-            "key": "field_68a2f73bc9912",
+            "key": "field_68a59cbf7eac0",
             "label": "Text",
             "name": "text",
             "aria-label": "",
@@ -63,12 +63,46 @@
             "new_lines": "br"
         },
         {
-            "key": "field_68a2f752c9913",
-            "label": "Image bg",
-            "name": "image_bg",
+            "key": "field_68a59cd47eac1",
+            "label": "Left Link",
+            "name": "left_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_68a59d027eac2",
+            "label": "Right Link",
+            "name": "right_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        },
+        {
+            "key": "field_68a59d127eac3",
+            "label": "Image",
+            "name": "image",
             "aria-label": "",
             "type": "image",
-            "instructions": "",
+            "instructions": "Recommended size 1000x1000px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -87,91 +121,6 @@
             "mime_types": "",
             "allow_in_bindings": 0,
             "preview_size": "medium"
-        },
-        {
-            "key": "field_68a2f77fc9914",
-            "label": "Product Link",
-            "name": "product_link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "allow_in_bindings": 0
-        },
-        {
-            "key": "field_68a2f795c9915",
-            "label": "Contact Link",
-            "name": "contact_link",
-            "aria-label": "",
-            "type": "link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "allow_in_bindings": 0
-        },
-        {
-            "key": "field_68a319b4bffcc",
-            "label": "Partners",
-            "name": "partners",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "table",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Add Partner's Logo",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_68a319eebffcd",
-                    "label": "Logo",
-                    "name": "logo",
-                    "aria-label": "",
-                    "type": "image",
-                    "instructions": "Recommended size 200x100px",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "id",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "allow_in_bindings": 0,
-                    "preview_size": "thumbnail",
-                    "parent_repeater": "field_68a319b4bffcc"
-                }
-            ]
         }
     ],
     "location": [
@@ -179,7 +128,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "wcl\/hero"
+                "value": "wcl\/page-hero"
             }
         ]
     ],
@@ -192,5 +141,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755683874
+    "modified": 1755684164
 }

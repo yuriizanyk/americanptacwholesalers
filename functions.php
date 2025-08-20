@@ -14,7 +14,7 @@
 // define( 'EMAIL_SENDER', $_ENV['EMAIL_SENDER'] );
 
 /** @desc Other variables */
-define('WCL_THEME_VERSION', '0.1.2');
+define('WCL_THEME_VERSION', '0.1.3');
 define('SITE_NAME', get_bloginfo('name'));
 define('WCL_CONTACT_MAIL', 'admin@mail.com');
 
@@ -115,6 +115,9 @@ add_image_size('square-sm@2x', 150, 0, false);
 
 add_image_size('square-md', 250, 0, false);
 add_image_size('square-md@2x', 500, 0, false);
+
+add_image_size('square-lg', 500, 0, false);
+add_image_size('square-lg@2x', 1000, 0, false);
 
 add_image_size('landscape-sm', 400, 250, false);
 add_image_size('landscape-sm@2x', 800, 500, false);
