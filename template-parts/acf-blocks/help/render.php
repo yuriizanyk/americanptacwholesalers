@@ -52,7 +52,7 @@ $bg_color = get_field( 'background' ) ?: 'white';
                         <?= esc_html($name); ?>
                     </a>
                 <?php endif; ?>
-                <?php if (!$link_text): ?>
+                <?php if (!empty($link_text)): ?>
                 <div class="wcl-help__link-text"><?= $link_text; ?></div>
                 <?php endif; ?>
             </div>
