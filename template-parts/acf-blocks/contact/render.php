@@ -36,7 +36,7 @@ $contact_form = get_field('contact_form');
     <section <?= $anchor; ?> class="wcl-contact">
         <div class="wcl-contact__container wcl-section">
             <div class="wcl-contact__header wcl-section-inner">
-                <h2 class="wcl-contact__title wcl-h2"><?= $title; ?></h2>
+                <h2 class="wcl-contact__title wcl-h2 wcl-h2--anim"><?= $title; ?></h2>
                 <?php if ($text): ?>
                     <div class="wcl-contact__text"><?= $text; ?></div>
                 <?php endif; ?>

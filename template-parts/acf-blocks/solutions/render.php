@@ -35,12 +35,12 @@ $solution_repeater = get_field( 'solution_repeater' );
 <section <?= $anchor; ?>class="wcl-solutions">
     <div class="wcl-solutions__container wcl-section-inner">
         <div class="wcl-solutions__header">
-            <h2 class="wcl-solutions__title wcl-h2"><?= $title; ?></h2>
-            <div class="wcl-solutions__text"><?= $text; ?></div>
+            <h2 class="wcl-solutions__title wcl-h2 anim-left anim-left--anim"><?= $title; ?></h2>
+            <div class="wcl-solutions__text anim-right anim-right--anim"><?= $text; ?></div>
         </div>
-        <div class="wcl-solutions__content">
+        <div class="wcl-solutions__content anim-content">
             <?php foreach ($solution_repeater as $solution): ?>
-                <div class="wcl-solutions__item">
+                <div class="wcl-solutions__item anim-item anim-item--anim">
                     <div class="wcl-solutions__item-content">
                         <h3 class="wcl-solutions__item-title wcl-h3"><?= $solution['solution_title']; ?></h3>
                         <div class="wcl-solutions__item-text"><?= $solution['solution_text']; ?></div>

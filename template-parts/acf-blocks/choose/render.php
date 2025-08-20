@@ -35,14 +35,14 @@ $choose_repeater = get_field( 'choose_repeater' );
 <section <?= $anchor; ?>class="wcl-choose">
     <div class="wcl-choose__container wcl-section-inner">
         <div class="wcl-choose__header">
-            <h2 class="wcl-choose__title wcl-h2"><?= $title; ?></h2>
+            <h2 class="wcl-choose__title wcl-h2 anim-left anim-left--anim"><?= $title; ?></h2>
             <?php if (!empty($text)): ?>
-            <div class="wcl-choose__text"><?= $text; ?></div>
+            <div class="wcl-choose__text anim-right anim-right--anim"><?= $text; ?></div>
             <?php endif; ?>
         </div>
-        <div class="wcl-choose__content">
+        <div class="wcl-choose__content anim-content">
             <?php foreach ($choose_repeater as $choose): ?>
-                <div class="wcl-choose__item">
+                <div class="wcl-choose__item anim-item anim-item--anim">
                     <div class="wcl-choose__item-icon">
                         <?= wp_get_attachment_image($choose['choose_icon'], 'square-sm'); ?>
                     </div>

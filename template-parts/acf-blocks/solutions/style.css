@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 .wcl-solutions__title {
   text-align: center;
