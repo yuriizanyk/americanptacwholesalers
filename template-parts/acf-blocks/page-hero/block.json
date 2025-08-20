@@ -1,6 +1,6 @@
 {
     "name": "wcl/page-hero",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "title": "Page Hero",
     "description": "A custom Page Hero block",
     "style": [

@@ -79,7 +79,7 @@
             "layout": "table",
             "pagination": 0,
             "min": 0,
-            "max": 3,
+            "max": 4,
             "collapsed": "",
             "button_label": "Add Choose",
             "rows_per_page": 20,
@@ -176,5 +176,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755585584
+    "modified": 1755692608
 }
