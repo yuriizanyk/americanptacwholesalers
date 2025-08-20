@@ -14,7 +14,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 40px;
+        gap: 20px;
 
         @media only screen and (max-width: $media-md) {
             flex-direction: column;
