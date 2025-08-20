@@ -6,6 +6,8 @@
 }
 .wcl-help__container--white {
   background-color: var(--white-color);
+  padding-top: 0;
+  padding-bottom: 25px;
 }
 .wcl-help__container--green {
   background-color: var(--bg-color);

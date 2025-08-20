@@ -43,14 +43,14 @@ $contact_form = get_field('contact_form');
             </div>
             <div class="wcl-contact__body wcl-section-inner">
                 <?php if ($contact_form): ?>
-                    <div class="wcl-contact__form">
+                    <div class="wcl-contact__form" id="wcl-form">
                         <h3 class="wcl-contact__form-title wcl-h3">Send Us a Message</h3>
                         <div class="wcl-contact__form-container">
                             <?php echo do_shortcode($contact_form); ?>
                         </div>
                     </div>
                 <?php endif; ?>
-                <div class="wcl-contact__contacts">
+                <div class="wcl-contact__contacts" id="wcl-info">
                     <h3 class="wcl-contact__contacts-title wcl-h3">Contact Information</h3>
                     <div class="wcl-contact__contacts-list">
                         <div class="wcl-contact__contacts-items">

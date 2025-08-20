@@ -14,7 +14,7 @@
 // Preview mode
 if (isset($block['data']['is_example']) && $block['data']['is_example']) {
     ?>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/acf-preview/default.jpg" alt="Help Preview"
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/acf-preview/help.png" alt="Help Preview"
         style="width: 100%; height: auto;">
     <?php
     return;
