@@ -59,12 +59,8 @@
         @media only screen and (max-width: 900px) {
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 100%;
+            width: 90%;
             max-width: 750px;
-        }
-
-        @media only screen and (max-width: $media-md) {
-            display: none;
         }
 
         img {
@@ -124,6 +120,8 @@
     }
 
     &__person {
+        display: flex;
+        flex-direction: column;
     }
 
     &__name {

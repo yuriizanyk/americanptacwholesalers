@@ -35,7 +35,7 @@
   flex-direction: column;
 }
 .wcl-contact__form-title {
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 .wcl-contact__form-container .wpcf7 {
   display: flex;
@@ -53,6 +53,7 @@
 .wcl-contact__form-container .wpcf7-form label {
   width: 100%;
   font-size: 14px;
+  margin-top: 20px;
 }
 .wcl-contact__form-container .wpcf7-form__row {
   width: 100%;
@@ -63,19 +64,19 @@
 .wcl-contact__form-container .wpcf7-form__textarea.wpcf7-textarea {
   min-height: 100px;
   max-height: 250px;
-  height: 125px;
+  height: 135px;
   border: 1px solid rgba(61, 126, 113, 0.5019607843);
   border-radius: 15px;
 }
 .wcl-contact__form-container .wpcf7-form__textarea.wpcf7-textarea::-moz-placeholder {
   color: rgba(33, 33, 33, 0.2509803922);
   font-size: 18px;
-  font-family: "Onest", sans-serif !important;
+  font-family: var(--font-onest);
 }
 .wcl-contact__form-container .wpcf7-form__textarea.wpcf7-textarea::placeholder {
   color: rgba(33, 33, 33, 0.2509803922);
   font-size: 18px;
-  font-family: "Onest", sans-serif !important;
+  font-family: var(--font-onest);
 }
 .wcl-contact__form-container .wpcf7-form__button.wpcf7-submit.wcl-button {
   border: none;
@@ -92,7 +93,7 @@
 }
 .wcl-contact__form-container .wpcf7-form-control {
   width: 100%;
-  margin: 10px 0 20px;
+  margin: 5px 0 5px;
 }
 .wcl-contact__form-container .wpcf7-form-control:not(.wpcf7-form__button) {
   border: 1px solid rgba(61, 126, 113, 0.5019607843);
@@ -128,16 +129,18 @@
 .wcl-contact__form-container .wpcf7 form.payment-required .wpcf7-response-output {
   border: none;
   color: #dc3232;
+  font-size: 16px;
 }
 .wcl-contact__form-container .wpcf7 form.sent .wpcf7-response-output {
   border: none;
   color: #46b450;
+  font-size: 16px;
 }
 .wcl-contact__form-container .wpcf7-not-valid-tip {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .wcl-contact__form-container .wpcf7-spinner {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .wcl-contact__contacts {
   width: 100%;
@@ -167,7 +170,7 @@
   gap: 14px;
 }
 .wcl-contact__contacts-item:first-child .wcl-contact__contacts-item-connect {
-  max-width: 300px;
+  max-width: 290px;
 }
 .wcl-contact__contacts-item h4 {
   font-size: 18px;
@@ -184,7 +187,7 @@
   align-items: center;
   justify-content: center;
 }
-.wcl-contact__contacts-item-icon img {
+.wcl-contact__contacts-item-icon svg {
   width: 38px;
   height: 38px;
   -o-object-fit: contain;
@@ -326,7 +329,7 @@
   }
   .wcl-contact__form-title {
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
   .wcl-contact__form-container .wpcf7-form__row {
     flex-direction: row;
@@ -373,6 +376,24 @@
   }
   .wcl-contact__form {
     padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wcl-contact__contacts-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wcl-contact__contacts-item-info {
+    align-items: center;
+  }
+  .wcl-contact__contacts-item-title {
+    text-align: center;
+  }
+  .wcl-contact__contacts-item-connect {
+    text-align: center;
+  }
+  .wcl-contact__contacts-item-connects {
+    align-items: center;
   }
 }
 @media (max-width: 23.4375em) {

@@ -89,6 +89,10 @@
   -o-object-position: center;
      object-position: center;
 }
+.wcl-testimonials__person {
+  display: flex;
+  flex-direction: column;
+}
 .wcl-testimonials__name {
   font-size: 18px;
 }
@@ -212,7 +216,7 @@
   .wcl-testimonials__decor {
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 90%;
     max-width: 750px;
   }
 }
@@ -220,11 +224,6 @@
   .wcl-testimonials__list.wcl-section-inner {
     padding: 0;
     overflow: hidden;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .wcl-testimonials__decor {
-    display: none;
   }
 }
 @media (max-width: 23.4375em) {
