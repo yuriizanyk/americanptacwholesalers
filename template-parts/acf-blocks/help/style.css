@@ -1,0 +1,106 @@
+.wcl-help__container {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  border-radius: 35px;
+  overflow: hidden;
+}
+.wcl-help__container--white {
+  background-color: var(--white-color);
+}
+.wcl-help__container--green {
+  background-color: var(--bg-color);
+}
+.wcl-help__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.wcl-help__body {
+  width: 100%;
+  max-width: 746px;
+  display: flex;
+  flex-direction: column;
+}
+.wcl-help__title {
+  margin-bottom: 10px;
+}
+.wcl-help__action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wcl-help__link {
+  min-width: 178px;
+}
+.wcl-help__link-text {
+  width: 157px;
+  font-size: 14px;
+}
+@media (min-width: 23.4375em) and (max-width: 90em) {
+  @supports (margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+    .wcl-help {
+      margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem );
+    }
+  }
+  @supports not (margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+    .wcl-help {
+      margin-top: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+  @supports (margin-bottom: clamp( 1.5625rem , 0.9022887324rem  +  2.8169014085vw , 3.4375rem )) {
+    .wcl-help {
+      margin-bottom: clamp( 1.5625rem , 0.9022887324rem  +  2.8169014085vw , 3.4375rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 1.5625rem , 0.9022887324rem  +  2.8169014085vw , 3.4375rem )) {
+    .wcl-help {
+      margin-bottom: calc(1.5625rem + 1.875 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+}
+@media (min-width: 90em) {
+  .wcl-help {
+    margin-top: 7.8125rem;
+  }
+  .wcl-help {
+    margin-bottom: 3.4375rem;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .wcl-help__container {
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wcl-help__action {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wcl-help__content {
+    flex-direction: column;
+  }
+  .wcl-help__body {
+    align-items: center;
+  }
+  .wcl-help__title {
+    text-align: center;
+  }
+  .wcl-help__text {
+    text-align: center;
+  }
+  .wcl-help__link-text {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 23.4375em) {
+  .wcl-help {
+    margin-top: 3.125rem;
+  }
+  .wcl-help {
+    margin-bottom: 1.5625rem;
+  }
+}

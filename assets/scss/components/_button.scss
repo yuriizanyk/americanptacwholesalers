@@ -8,6 +8,7 @@
     font-weight: 700;
     border-radius: 30px;
     text-align: center;
+    flex-shrink: 0;
     transition: var(--transition);
 
     @media only screen and (max-width: $media-md) {
