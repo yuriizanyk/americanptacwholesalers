@@ -171,6 +171,8 @@
 }
 .wcl-contact__contacts-item:first-child .wcl-contact__contacts-item-connect {
   max-width: 290px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .wcl-contact__contacts-item h4 {
   font-size: 18px;
@@ -202,6 +204,8 @@
   font-size: 16px;
 }
 .wcl-contact__contacts-item-connect {
+  width: -moz-fit-content;
+  width: fit-content;
   position: relative;
   text-decoration: none;
   color: inherit;
@@ -213,7 +217,7 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
   width: 0;
   height: 1px;
   background-color: var(--green-color);
@@ -412,6 +416,7 @@
     color: var(--green-color);
   }
   .wcl-contact__contacts-item-connect:hover::after {
+    left: 0;
     width: 100%;
   }
   .wcl-contact__contacts-item-social:hover img {

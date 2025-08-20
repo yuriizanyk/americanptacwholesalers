@@ -1,2 +1,264 @@
+@import "assets/scss/utils/media";
+
 .wcl-footer {
+
+    &__container {
+        color: var(--white-color);
+        background-color: var(--green-color);
+        font-size: 16px;
+        border-radius: 35px;
+        padding: 75px 15px 85px;
+        overflow: hidden;
+
+        @media screen and (max-width: 1920px) {
+            border-radius: 0;
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media screen and (max-width: $media-lg) {
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        @media screen and (max-width: $media-sm) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 306px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (max-width: $media-lg) {
+            max-width: calc(50% - 20px);
+            order: 1;
+        }
+
+        @media screen and (max-width: $media-sm) {
+            align-items: center;
+            max-width: 100%;
+        }
+    }
+
+    &__logo {
+        height: 52px;
+        width: 145px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: left center;
+
+            @media screen and (max-width: $media-sm) {
+                object-position: center;
+            }
+        }
+    }
+
+    &__text {
+
+        @media screen and (max-width: $media-sm) {
+            text-align: center;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: var(--white-color);
+        transition: var(--transition);
+
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        img {
+            width: 14px;
+            height: 14px;
+            filter: invert(48%) sepia(35%) saturate(511%) hue-rotate(118deg) brightness(83%) contrast(90%);
+        }
+    }
+
+    &__products {
+
+        @media screen and (max-width: $media-lg) {
+            order: 3;
+        }
+    }
+
+    &__services {
+
+        @media screen and (max-width: $media-lg) {
+            order: 4;
+        }
+    }
+
+    &__products,
+    &__services,
+    &__menu {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (max-width: $media-lg) {
+            width: 100%;
+            max-width: calc(50% - 20px);
+        }
+
+        @media screen and (max-width: $media-sm) {
+            align-items: center;
+            max-width: 100%;
+        }
+    }
+
+    &__products-title,
+    &__services-title,
+    &__menu-title {
+        margin-bottom: 20px;
+        @include adaptiveValue("font-size", 24, 22, 0, 1440, 375);
+
+        @media screen and (max-width: $media-sm) {
+            text-align: center;
+        }
+    }
+
+    &__products-list,
+    &__services-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media screen and (max-width: $media-sm) {
+            align-items: center;
+        }
+    }
+
+    &__menu {
+        @media screen and (max-width: $media-lg) {
+            order: 2;
+        }
+    }
+
+    &__menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media screen and (max-width: $media-sm) {
+            align-items: center;
+        }
+
+        .menu-item {
+            
+            a {
+                position: relative;
+                text-decoration: none;
+                color: var(--white-color);
+                transition: var(--transition);
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0;
+                    height: 1px;
+                    background-color: var(--white-color);
+                    transition: var(--transition);
+                }
+
+                @media (any-hover: hover) {
+                    &:hover::before {
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 15px;
+        font-size: 14px;
+
+        @media screen and (max-width: $media-lg) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    &__bottom-text {
+        @media screen and (max-width: $media-lg) {
+            text-align: center;
+        }
+    }
+
+    &__bottom-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px 20px;
+    }
+
+    &__bottom-link {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+        transition: var(--transition);
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background-color: var(--green-color);
+            transition: var(--transition);
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: var(--green-color);
+            }
+            &:hover::before {
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
 }
