@@ -67,7 +67,7 @@
   background-color: var(--bg-color);
   border-radius: 35px;
   padding: 35px;
-  margin: 0 12px;
+  margin-right: 24px;
 }
 .wcl-testimonials__info {
   display: flex;
@@ -225,6 +225,9 @@
   .wcl-testimonials__list.wcl-section-inner {
     padding: 0;
     overflow: hidden;
+  }
+  .wcl-testimonials__content {
+    margin: 0 12px;
   }
 }
 @media (max-width: 23.4375em) {

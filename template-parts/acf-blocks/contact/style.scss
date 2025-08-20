@@ -16,7 +16,11 @@
         @include adaptiveValue("gap", 55, 25, 0, 1440, 375);
 
         @media screen and (max-width: 1920px) {
-            border-radius: 0    ;
+            border-radius: 0;
+        }
+
+        @media screen and (max-width: $media-md) {
+            padding: 45px 15px 55px;
         }
     }
 
