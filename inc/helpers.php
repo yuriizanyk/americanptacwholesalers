@@ -90,7 +90,7 @@ function wcl_register_post_type( $singular_name, $plural_name, $args = array() )
         'hierarchical' => false,
         'menu_position' => 20,
         'menu_icon' => 'dashicons-admin-post',
-        'supports' => array( 'title', 'editor', 'excerpt' ),
+        'supports' => array( 'title' ),
         'show_in_rest' => true,
     ];
 

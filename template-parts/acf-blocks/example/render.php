@@ -27,7 +27,7 @@ if ( !empty( $block[ 'anchor' ] ) ) {
 }
 ?>
 
-<section <?= $anchor; ?>class="wcl-example">
+<section <?= $anchor; ?> class="wcl-example">
     <div class="wcl-container">
         <div class="wcl-example__content">
             <h1>Hello Example Block!</h1>

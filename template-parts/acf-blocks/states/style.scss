@@ -1,0 +1,138 @@
+@import "assets/scss/utils/media";
+@import "assets/scss/utils/mixings";
+
+.wcl-states {
+    @include adaptiveValue("margin-top", 55, 30, 0, 1440, 375);
+    @include adaptiveValue("margin-bottom", 100, 40, 0, 1440, 375);
+
+    &__container.wcl-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--bg-color);
+        border-radius: 35px;
+        padding: 55px 0;
+        overflow: hidden;
+        @include adaptiveValue("gap", 55, 25, 0, 1440, 375);
+
+        @media screen and (max-width: 1920px) {
+            border-radius: 0;
+        }
+
+        @media screen and (max-width: $media-md) {
+            padding: 30px 15px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+
+        @media only screen and (max-width: $media-xl) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media only screen and (max-width: 992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: $media-md) {
+            gap: 15px;
+        }
+
+        @media only screen and (max-width: $media-sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        background-color: var(--white-color);
+        border: 1px solid transparent;
+        border-radius: 25px;
+        padding: 20px;
+        color: inherit;
+        text-decoration: none;
+        transition: var(--transition);
+
+        @media screen and (max-width: $media-md) {
+            padding: 15px;
+        }
+        
+        @media (any-hover: hover) {
+            &:hover {
+                border-color: var(--green-color);
+            }
+            &:hover .wcl-states__state {
+                color: var(--green-color);
+            }
+            &:hover .wcl-states__icon svg {
+                animation: email 1s ease 0s 1 normal forwards;
+
+                @keyframes email {
+                    0% {
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+
+                    50% {
+                        transform: translateX(200%);
+                        opacity: 0;
+                    }
+                    
+                    75% {
+                        transform: translateX(-200%);
+                        opacity: 0;
+
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+
+    &__state {
+        text-wrap: balance;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        transition: var(--transition);
+        @include adaptiveValue("font-size", 24, 20, 0, 1440, 375);
+    }
+
+    &__icon {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        border: 1px solid var(--green-color);
+        background-color: var(--bg-color);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: $media-md) {
+            width: 40px;
+            height: 40px;
+        }
+
+        svg {
+            transition: var(--transition);
+            width: 20px;
+            height: 20px;
+
+            @media screen and (max-width: $media-md) {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

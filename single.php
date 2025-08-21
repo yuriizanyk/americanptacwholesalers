@@ -1,12 +1,13 @@
 <?php get_header(); ?>
 
-    <!-- MAIN CONTENT -->
-    <main id="wcl-page-content" class="wcl-page-content">
-        <div class="wcl-container">
+<!-- MAIN CONTENT -->
+<main id="wcl-page-content" class="wcl-page-content">
+    <div class="wcl-single wcl-container">
+        <div class="wcl-single__container wcl-section-inner">
             <h1><?php the_title(); ?></h1>
-            <br>
-            <?php the_content(); ?>
+            <div><?php the_content(); ?></div>
         </div>
-    </main>
+    </div>
+</main>
 
 <?php get_footer(); ?>
