@@ -166,10 +166,6 @@
 .rating--set .rating__input {
   cursor: pointer;
 }
-.rating__value {
-  font-weight: 500;
-  font-size: 18px;
-}
 @media (min-width: 23.4375em) and (max-width: 90em) {
   @supports (margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
     .wcl-testimonials {
@@ -213,18 +209,16 @@
     gap: 3.4375rem;
   }
 }
-@media only screen and (max-width: 900px) {
-  .wcl-testimonials__decor {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 750px;
-  }
-}
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1024px) {
   .wcl-testimonials__list.wcl-section-inner {
     padding: 0;
     overflow: hidden;
+  }
+  .wcl-testimonials__decor {
+    display: none;
+  }
+  .wcl-testimonials__slider-container {
+    max-width: 100%;
   }
   .wcl-testimonials__content {
     margin: 0 12px;
