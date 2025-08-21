@@ -14,7 +14,7 @@
 // define( 'EMAIL_SENDER', $_ENV['EMAIL_SENDER'] );
 
 /** @desc Other variables */
-define('WCL_THEME_VERSION', '0.2.2');
+define('WCL_THEME_VERSION', '0.2.3');
 define('SITE_NAME', get_bloginfo('name'));
 define('WCL_CONTACT_MAIL', 'admin@mail.com');
 
@@ -244,7 +244,7 @@ require_once get_theme_file_path('/inc/shortcodes/social-links.php');
 // require_once get_theme_file_path( '/inc/walker/header-nav-menu.php' );
 
 // CPT
-// require_once get_theme_file_path( '/inc/custom-post-types/products.php' );
+require_once get_theme_file_path( '/inc/custom-post-types/products.php' );
 
 // Actions
 // require_once get_theme_file_path( '/inc/actions/load-more.php' );
