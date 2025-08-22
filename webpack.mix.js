@@ -60,3 +60,6 @@ mix.sass('template-parts/acf-blocks/help/style.scss', 'template-parts/acf-blocks
 
 mix.sass('template-parts/acf-blocks/states/style.scss', 'template-parts/acf-blocks/states')
     .sourceMaps();
+
+mix.sass('template-parts/acf-blocks/page-heading/style.scss', 'template-parts/acf-blocks/page-heading')
+    .sourceMaps();

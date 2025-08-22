@@ -1,0 +1,73 @@
+.wcl-page-heading__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.wcl-page-heading__title {
+  text-wrap: balance;
+}
+.wcl-page-heading__text {
+  width: 100%;
+  max-width: 856px;
+  font-size: 20px;
+  line-height: 1.55;
+}
+@media (min-width: 23.4375em) and (max-width: 90em) {
+  @supports (margin-top: clamp( 2.5rem , 1.8397887324rem  +  2.8169014085vw , 4.375rem )) {
+    .wcl-page-heading {
+      margin-top: clamp( 2.5rem , 1.8397887324rem  +  2.8169014085vw , 4.375rem );
+    }
+  }
+  @supports not (margin-top: clamp( 2.5rem , 1.8397887324rem  +  2.8169014085vw , 4.375rem )) {
+    .wcl-page-heading {
+      margin-top: calc(2.5rem + 1.875 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+  @supports (margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
+    .wcl-page-heading {
+      margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
+    .wcl-page-heading {
+      margin-bottom: calc(1.875rem + 1.5625 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+  @supports (font-size: clamp( 2.25rem , 1.985915493rem  +  1.1267605634vw , 3rem )) {
+    .wcl-page-heading__title {
+      font-size: clamp( 2.25rem , 1.985915493rem  +  1.1267605634vw , 3rem );
+    }
+  }
+  @supports not (font-size: clamp( 2.25rem , 1.985915493rem  +  1.1267605634vw , 3rem )) {
+    .wcl-page-heading__title {
+      font-size: calc(2.25rem + 0.75 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+}
+@media (min-width: 90em) {
+  .wcl-page-heading {
+    margin-top: 4.375rem;
+  }
+  .wcl-page-heading {
+    margin-bottom: 3.4375rem;
+  }
+  .wcl-page-heading__title {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wcl-page-heading__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 23.4375em) {
+  .wcl-page-heading {
+    margin-top: 2.5rem;
+  }
+  .wcl-page-heading {
+    margin-bottom: 1.875rem;
+  }
+  .wcl-page-heading__title {
+    font-size: 2.25rem;
+  }
+}

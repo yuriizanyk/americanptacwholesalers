@@ -1,0 +1,29 @@
+@import "assets/scss/utils/media";
+@import "assets/scss/utils/mixings";
+
+.wcl-page-heading {
+    @include adaptiveValue("margin-top", 70, 40, 0, 1440, 375);
+    @include adaptiveValue("margin-bottom", 55, 30, 0, 1440, 375);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__title {
+        text-wrap: balance;
+        @include adaptiveValue("font-size", 48, 36, 0, 1440, 375);
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 856px;
+        font-size: 20px;
+        line-height: 1.55;
+
+        @media only screen and (max-width: $media-md) {
+            font-size: 18px;
+        }
+    }
+}

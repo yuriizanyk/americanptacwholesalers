@@ -71,7 +71,7 @@
                 color: var(--green-color);
             }
             &:hover .wcl-states__icon svg {
-                animation: email 1s ease 0s 1 normal forwards;
+                animation: email 0.5s ease 0s 1 normal forwards;
 
                 @keyframes email {
                     0% {

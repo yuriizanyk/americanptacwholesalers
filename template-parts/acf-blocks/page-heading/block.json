@@ -1,8 +1,8 @@
 {
-    "name": "wcl/states",
-    "version": "0.0.2",
-    "title": "States",
-    "description": "A custom States block",
+    "name": "wcl/page-heading",
+    "version": "0.0.1",
+    "title": "Page Heading",
+    "description": "A custom Page Heading block",
     "style": [
         "file:./style.css"
     ],
