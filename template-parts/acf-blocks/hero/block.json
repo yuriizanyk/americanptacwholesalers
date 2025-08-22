@@ -1,6 +1,6 @@
 {
     "name": "wcl/hero",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "title": "Home Page Hero",
     "description": "A custom Home Page Hero block",
     "style": [

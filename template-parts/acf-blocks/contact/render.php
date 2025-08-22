@@ -71,15 +71,15 @@ $contact_form = get_field('contact_form');
                                         </svg>
                                     </div>
                                     <div class="wcl-contact__contacts-item-info">
-                                        <h3 class="wcl-contact__contacts-item-title">Our Location</h3>
+                                        <h4 class="wcl-contact__contacts-item-title">Our Location</h4>
                                         <?php if ($address):
                                             $url = $address['url'];
                                             $name = $address['title'];
                                             $target = $address['target'] ?: '_self';
                                             ?>
                                             <a href="<?php echo esc_url($url); ?>" target="<?php echo esc_attr($target); ?>"
-                                                class="wcl-contact__contacts-item-connect">
-                                                <?= wp_kses_post($name); ?>
+                                                class="wcl-contact__contacts-item-connect wcl-contact__contacts-item-connect--address">
+                                                <span><?= wp_kses_post($name); ?></span>
                                             </a>
                                         <?php endif; ?>
                                     </div>
@@ -110,7 +110,7 @@ $contact_form = get_field('contact_form');
                                         </svg>
                                     </div>
                                     <div class="wcl-contact__contacts-item-info">
-                                        <h3 class="wcl-contact__contacts-item-title">Phone Number</h3>
+                                        <h4 class="wcl-contact__contacts-item-title">Phone Number</h4>
                                         <div class="wcl-contact__contacts-item-connects">
                                             <?php foreach ($phones as $phone):
                                                 $phone_link = $phone['phone_link'];
@@ -157,7 +157,7 @@ $contact_form = get_field('contact_form');
                                         </svg>
                                     </div>
                                     <div class="wcl-contact__contacts-item-info">
-                                        <h3 class="wcl-contact__contacts-item-title">Email Address</h3>
+                                        <h4 class="wcl-contact__contacts-item-title">Email Address</h4>
                                         <div class="wcl-contact__contacts-item-connects">
                                             <?php foreach ($emails as $email):
                                                 $email_link = $email['email_link'];
@@ -190,7 +190,7 @@ $contact_form = get_field('contact_form');
                                         </svg>
                                     </div>
                                     <div class="wcl-contact__contacts-item-info">
-                                        <h3 class="wcl-contact__contacts-item-title">Business Hours</h3>
+                                        <h4 class="wcl-contact__contacts-item-title">Business Hours</h4>
                                         <div class="wcl-contact__contacts-item-connects">
                                             <?php foreach ($hours as $hour): ?>
                                                 <div class="wcl-contact__contacts-item-period">
@@ -206,7 +206,7 @@ $contact_form = get_field('contact_form');
                     </div>
                     <?php if ($socials): ?>
                         <div class="wcl-contact__contacts-social-item">
-                            <h4 class="wcl-contact__contacts-item-title">Follow Us</h4>
+                            <h3 class="wcl-contact__contacts-item-title wcl-contact__contacts-item-title--social">Follow Us</h3>
                             <div class="wcl-contact__contacts-item-socials">
                                 <?php foreach ($socials as $social):
                                     $social_icon = $social['social_icon'];

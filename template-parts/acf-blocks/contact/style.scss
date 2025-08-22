@@ -275,18 +275,6 @@
             flex-direction: column;
             align-items: center;
         }
-
-        &:first-child {
-            .wcl-contact__contacts-item-connect {
-                max-width: 290px;
-                width: fit-content;
-            }
-        }
-
-        h4 {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
     }
 
     &__contacts-item-icon {
@@ -320,6 +308,11 @@
     }
 
     &__contacts-item-title {
+        @include adaptiveValue("font-size", 24, 22, 0, 1440, 375);
+
+        &--social {
+            font-size: 18px !important;
+        }
         
         @media screen and (max-width: 450px) {
             text-align: center;
@@ -327,6 +320,7 @@
     }
 
     &__contacts-item-connect {
+        display: flex;
         width: fit-content;
         position: relative;
         text-decoration: none;
@@ -358,6 +352,22 @@
             &:hover::after {
                 left: 0;
                 width: 100%;
+            }
+        }
+
+        &--address {
+            max-width: 290px;
+            width: fit-content;
+
+            &::after {
+                width: 0;
+                left: 25%;
+            }
+
+            @media (any-hover: hover) {
+                &:hover::after {
+                    width: 50%;
+                }
             }
         }
     }
