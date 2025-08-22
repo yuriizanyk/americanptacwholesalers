@@ -14,7 +14,7 @@
 // define( 'EMAIL_SENDER', $_ENV['EMAIL_SENDER'] );
 
 /** @desc Other variables */
-define('WCL_THEME_VERSION', '0.2.4');
+define('WCL_THEME_VERSION', '0.2.5');
 define('SITE_NAME', get_bloginfo('name'));
 define('WCL_CONTACT_MAIL', 'admin@mail.com');
 
