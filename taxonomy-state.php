@@ -30,13 +30,19 @@ $help_section_details = get_field('help_section_details', 'option');
                             <span>Back to all states</span>
                         </a>
                     </div>
-                    <h1 class="wcl-state__title">
-                        <?= esc_html($product_page_title); ?> <?php single_term_title(); ?>
-                    </h1>
+                    <?php if (!empty($product_page_title)): ?>
+                        <h1 class="wcl-state__title">
+                            <?= esc_html($product_page_title); ?>     <?php single_term_title(); ?>
+                        </h1>
+                    <?php endif; ?>
+                    <?php if (!empty($product_page_text_start) || !empty($product_page_text_end)): ?>
                     <p class="wcl-state__text">
-                        <?= esc_html($product_page_text_start); ?> <?php single_term_title(); ?>.
-                        <?= esc_html($product_page_text_end); ?>
+                        <?php
+                        echo (!empty($product_page_text_start) ? esc_html($product_page_text_start) . ' ' . single_term_title('', false) . '. ' : '')
+                            . (!empty($product_page_text_end) ? esc_html($product_page_text_end) : '');
+                        ?>
                     </p>
+                    <?php endif; ?>
                 </div>
 
                 <?php
@@ -92,7 +98,8 @@ $help_section_details = get_field('help_section_details', 'option');
                                                 <?= esc_html($name); ?>
                                             </a>
                                         <?php endif; ?>
-                                        <div class="wcl-state__product-description"><?= esc_html($product_button_details); ?></div>
+                                        <div class="wcl-state__product-description"><?= esc_html($product_button_details); ?>
+                                        </div>
                                     </div>
                                 </div>
                                 <?php if ($images): ?>
