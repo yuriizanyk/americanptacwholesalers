@@ -10,6 +10,41 @@
     &__content {
         display: flex;
         flex-direction: column;
+
+        .navigation.pagination {
+            margin: 0 auto;
+            @include adaptiveValue("margin-bottom", 55, 30, 0, 1440, 375);
+            
+            .nav-links {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                .page-numbers {
+                    text-decoration: none;
+                    border-radius: 10px;
+                    border: 1px solid var(--green-color);
+                    background-color: var(--green-color);
+                    padding: 10px 20px;
+                    color: var(--white-color);
+                    font-size: 18px;
+                    transition: var(--transition);
+
+                    &.current {
+                        color: var(--green-color);
+                        background-color: var(--green-hover);
+                    }
+
+                    @media (any-hover: hover) {
+                        &:hover {
+                            color: var(--green-color);
+                            background-color: var(--green-hover);
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &__header {
@@ -73,7 +108,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        @include adaptiveValue("margin-bottom", 100, 40, 0, 1440, 375);
+        @include adaptiveValue("margin-bottom", 55, 30, 0, 1440, 375);
 
         @media only screen and (max-width: 1150px) {
             grid-template-columns: repeat(2, 1fr);
