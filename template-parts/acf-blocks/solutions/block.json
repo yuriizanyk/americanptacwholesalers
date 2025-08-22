@@ -1,6 +1,6 @@
 {
     "name": "wcl/solutions",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "title": "Solutions",
     "description": "A custom Solutions block",
     "style": [

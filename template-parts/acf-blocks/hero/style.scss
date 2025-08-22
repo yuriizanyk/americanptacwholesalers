@@ -2,11 +2,12 @@
 @import "assets/scss/utils/mixings";
 
 .wcl-hero {
-    @include adaptiveValue("margin-bottom", 125, 50, 0, 1440, 375);
+    @include adaptiveValue("margin-bottom", 60, 25, 0, 1440, 375);
 
     &__container {
         position: relative;
         min-height: 800px;
+        @include adaptiveValue("padding-bottom", 60, 25, 0, 1440, 375);
 
         @media only screen and (max-width: $media-md) {
             min-height: 700px;

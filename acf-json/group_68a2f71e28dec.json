@@ -68,7 +68,7 @@
             "name": "image_bg",
             "aria-label": "",
             "type": "image",
-            "instructions": "",
+            "instructions": "Recommended size 3800x1200px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -192,5 +192,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755683874
+    "modified": 1755875118
 }

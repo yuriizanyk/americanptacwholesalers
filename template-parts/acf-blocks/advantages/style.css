@@ -80,14 +80,14 @@
       margin-top: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 66.5625);
     }
   }
-  @supports (margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+  @supports (margin-bottom: clamp( 1.5625rem , 0.7922535211rem  +  3.2863849765vw , 3.75rem )) {
     .wcl-advantages {
-      margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem );
+      margin-bottom: clamp( 1.5625rem , 0.7922535211rem  +  3.2863849765vw , 3.75rem );
     }
   }
-  @supports not (margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+  @supports not (margin-bottom: clamp( 1.5625rem , 0.7922535211rem  +  3.2863849765vw , 3.75rem )) {
     .wcl-advantages {
-      margin-bottom: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 66.5625);
+      margin-bottom: calc(1.5625rem + 2.1875 * (100vw - 23.4375rem) / 66.5625);
     }
   }
   @supports (margin-bottom: clamp( 1.5625rem , 0.9022887324rem  +  2.8169014085vw , 3.4375rem )) {
@@ -106,7 +106,7 @@
     margin-top: 7.8125rem;
   }
   .wcl-advantages {
-    margin-bottom: 7.8125rem;
+    margin-bottom: 3.75rem;
   }
   .wcl-advantages__header {
     margin-bottom: 3.4375rem;
@@ -132,7 +132,7 @@
     margin-top: 3.125rem;
   }
   .wcl-advantages {
-    margin-bottom: 3.125rem;
+    margin-bottom: 1.5625rem;
   }
   .wcl-advantages__header {
     margin-bottom: 1.5625rem;

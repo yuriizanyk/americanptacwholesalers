@@ -2,13 +2,14 @@
 @import "assets/scss/utils/mixings";
 
 .wcl-solutions {
-    @include adaptiveValue("margin-top", 125, 50, 0, 1440, 375);
+    @include adaptiveValue("margin-top", 60, 25, 0, 1440, 375);
     @include adaptiveValue("margin-bottom", 125, 50, 0, 1440, 375);
 
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include adaptiveValue("padding-top", 60, 25, 0, 1440, 375);
     }
 
     &__header {

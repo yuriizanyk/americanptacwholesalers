@@ -64,14 +64,14 @@
      object-position: center;
 }
 @media (min-width: 23.4375em) and (max-width: 90em) {
-  @supports (margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+  @supports (margin-top: clamp( 1.5625rem , 0.7922535211rem  +  3.2863849765vw , 3.75rem )) {
     .wcl-solutions {
-      margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem );
+      margin-top: clamp( 1.5625rem , 0.7922535211rem  +  3.2863849765vw , 3.75rem );
     }
   }
-  @supports not (margin-top: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
+  @supports not (margin-top: clamp( 1.5625rem , 0.7922535211rem  +  3.2863849765vw , 3.75rem )) {
     .wcl-solutions {
-      margin-top: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 66.5625);
+      margin-top: calc(1.5625rem + 2.1875 * (100vw - 23.4375rem) / 66.5625);
     }
   }
   @supports (margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
@@ -82,6 +82,16 @@
   @supports not (margin-bottom: clamp( 3.125rem , 1.474471831rem  +  7.0422535211vw , 7.8125rem )) {
     .wcl-solutions {
       margin-bottom: calc(3.125rem + 4.6875 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+  @supports (padding-top: clamp( 1.5625rem , 0.7922535211rem  +  3.2863849765vw , 3.75rem )) {
+    .wcl-solutions__container {
+      padding-top: clamp( 1.5625rem , 0.7922535211rem  +  3.2863849765vw , 3.75rem );
+    }
+  }
+  @supports not (padding-top: clamp( 1.5625rem , 0.7922535211rem  +  3.2863849765vw , 3.75rem )) {
+    .wcl-solutions__container {
+      padding-top: calc(1.5625rem + 2.1875 * (100vw - 23.4375rem) / 66.5625);
     }
   }
   @supports (margin-bottom: clamp( 1.5625rem , 0.9022887324rem  +  2.8169014085vw , 3.4375rem )) {
@@ -97,10 +107,13 @@
 }
 @media (min-width: 90em) {
   .wcl-solutions {
-    margin-top: 7.8125rem;
+    margin-top: 3.75rem;
   }
   .wcl-solutions {
     margin-bottom: 7.8125rem;
+  }
+  .wcl-solutions__container {
+    padding-top: 3.75rem;
   }
   .wcl-solutions__header {
     margin-bottom: 3.4375rem;
@@ -131,10 +144,13 @@
 }
 @media (max-width: 23.4375em) {
   .wcl-solutions {
-    margin-top: 3.125rem;
+    margin-top: 1.5625rem;
   }
   .wcl-solutions {
     margin-bottom: 3.125rem;
+  }
+  .wcl-solutions__container {
+    padding-top: 1.5625rem;
   }
   .wcl-solutions__header {
     margin-bottom: 1.5625rem;
