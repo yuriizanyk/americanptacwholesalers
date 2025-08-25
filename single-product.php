@@ -56,6 +56,12 @@ $full_description = get_field('full_description', get_the_ID());
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
+            <div id="image-modal" class="wcl-image-modal">
+                <span class="wcl-image-modal__close">&times;</span>
+                <div class="wcl-image-modal__content">
+                    <img class="wcl-image-modal__image" id="modal-image">
+                </div>
+            </div>
         </div>
     </div>
 </main>
