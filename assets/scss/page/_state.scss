@@ -362,7 +362,7 @@
     &__no-products {
         text-align: center;
         color: var(--green-color);
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 600;
         @include adaptiveValue("margin-bottom", 55, 30, 0, 1440, 375);
     }
