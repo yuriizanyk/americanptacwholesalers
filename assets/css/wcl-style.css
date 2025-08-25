@@ -793,6 +793,128 @@ i {
   transition: var(--transition);
 }
 
+.wcl-single__product {
+  min-width: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--bg-color);
+  padding: 30px 20px;
+  border-radius: 35px;
+}
+.wcl-single__product-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-grow: 1;
+}
+.wcl-single__product-info {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.wcl-single__product-full-info {
+  padding: 25px 15px;
+  font-size: 18px;
+  line-height: 1.55;
+  border-radius: 20px;
+  background-color: var(--white-color);
+}
+.wcl-single__product-full-info > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.wcl-single__product-full-info ol {
+  padding-left: 24px;
+}
+.wcl-single__product-full-info ol li::marker {
+  color: var(--green-color);
+  padding-left: 3px;
+}
+.wcl-single__product-full-info ul {
+  list-style: none;
+  padding-left: 18px;
+}
+.wcl-single__product-full-info ul li {
+  position: relative;
+  padding-left: 5px;
+}
+.wcl-single__product-full-info ul li::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: -15px;
+  background-color: var(--green-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.wcl-single__product-full-info a {
+  color: var(--green-color);
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+}
+.wcl-single__product-full-info a::before {
+  position: absolute;
+  content: "";
+  bottom: 3px;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: var(--green-color);
+  width: 100%;
+  height: 1px;
+  transition: var(--transition);
+}
+.wcl-single__product-full-info a:hover {
+  color: var(--green-color);
+}
+.wcl-single__product-full-info a:hover::before {
+  left: 50%;
+  width: 0%;
+  transition: var(--transition);
+}
+.wcl-single__product-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wcl-single__product-button {
+  font-size: 14px;
+  line-height: 1.25;
+  padding: 10px 20px;
+}
+.wcl-single__product-description {
+  font-size: 14px;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+.wcl-single__product-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.wcl-single__product-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 376/232;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.wcl-single__product-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .wcl-state__container.wcl-section {
   padding: 0;
 }
@@ -1033,7 +1155,7 @@ i {
 .wcl-state__no-products {
   text-align: center;
   color: var(--green-color);
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
 }
 .wcl-state__help {
@@ -1116,6 +1238,36 @@ i {
   @supports not (font-size: clamp( 1.375rem , 1.3309859155rem  +  0.1877934272vw , 1.5rem )) {
     .wcl-footer__products-title, .wcl-footer__services-title, .wcl-footer__menu-title {
       font-size: calc(1.375rem + 0.125 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+  @supports (margin-top: clamp( 2.5rem , 1.8397887324rem  +  2.8169014085vw , 4.375rem )) {
+    .wcl-single__product {
+      margin-top: clamp( 2.5rem , 1.8397887324rem  +  2.8169014085vw , 4.375rem );
+    }
+  }
+  @supports not (margin-top: clamp( 2.5rem , 1.8397887324rem  +  2.8169014085vw , 4.375rem )) {
+    .wcl-single__product {
+      margin-top: calc(2.5rem + 1.875 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+  @supports (margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
+    .wcl-single__product {
+      margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
+    .wcl-single__product {
+      margin-bottom: calc(1.875rem + 1.5625 * (100vw - 23.4375rem) / 66.5625);
+    }
+  }
+  @supports (font-size: clamp( 2rem , 1.7799295775rem  +  0.9389671362vw , 2.625rem )) {
+    .wcl-single__product-title {
+      font-size: clamp( 2rem , 1.7799295775rem  +  0.9389671362vw , 2.625rem );
+    }
+  }
+  @supports not (font-size: clamp( 2rem , 1.7799295775rem  +  0.9389671362vw , 2.625rem )) {
+    .wcl-single__product-title {
+      font-size: calc(2rem + 0.625 * (100vw - 23.4375rem) / 66.5625);
     }
   }
   @supports (margin-bottom: clamp( 1.875rem , 1.3248239437rem  +  2.3474178404vw , 3.4375rem )) {
@@ -1245,6 +1397,15 @@ i {
   .wcl-footer__products-title, .wcl-footer__services-title, .wcl-footer__menu-title {
     font-size: 1.5rem;
   }
+  .wcl-single__product {
+    margin-top: 4.375rem;
+  }
+  .wcl-single__product {
+    margin-bottom: 3.4375rem;
+  }
+  .wcl-single__product-title {
+    font-size: 2.625rem;
+  }
   .wcl-state__content .navigation.pagination {
     margin-bottom: 3.4375rem;
   }
@@ -1288,6 +1449,9 @@ i {
   }
 }
 @media only screen and (max-width: 1150px) {
+  .wcl-single__product-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .wcl-state__products {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1395,6 +1559,9 @@ i {
     max-width: 120px;
     height: 48px;
   }
+  .wcl-single__product-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .wcl-state__text {
     font-size: 18px;
   }
@@ -1457,6 +1624,14 @@ i {
   }
 }
 @media only screen and (max-width: 450px) {
+  .wcl-single__product-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .wcl-single__product-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .wcl-state__product-content {
     padding-left: 0;
     padding-right: 0;
@@ -1481,6 +1656,15 @@ i {
   }
   .wcl-footer__products-title, .wcl-footer__services-title, .wcl-footer__menu-title {
     font-size: 1.375rem;
+  }
+  .wcl-single__product {
+    margin-top: 2.5rem;
+  }
+  .wcl-single__product {
+    margin-bottom: 1.875rem;
+  }
+  .wcl-single__product-title {
+    font-size: 2rem;
   }
   .wcl-state__content .navigation.pagination {
     margin-bottom: 1.875rem;
